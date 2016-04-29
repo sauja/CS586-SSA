@@ -4,28 +4,28 @@ import java.util.*;
 
 public class Ready extends State {
 
-	public Ready() {
+	private final int ID=3;
+	public int getID()
+	{
+		return ID;
 	}
-
-	public int ID = 2;
-
 	public void noFunds() {
-		// TODO implement here
+		outp.displayMinBalanceMsg();
 		return;
 	}
 
 	public void incorrectLock() {
-		// TODO implement here
+		outp.displayIncorrectPINMsg();
 		return;
 	}
 
 	public void deposit() {
-		// TODO implement here
+		outp.makeDeposit();
 		return;
 	}
 
 	public void balance() {
-		// TODO implement here
+		outp.displayBalance();
 		return;
 	}
 
@@ -40,13 +40,78 @@ public class Ready extends State {
 	}
 
 	public void withdraw() {
-		// TODO implement here
+		outp.makeWithdraw();
 		return;
 	}
 
 	public void logout() {
 		// TODO implement here
 		return;
+	}
+@Override
+public void open() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctLogin() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectLogin() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctPINAboveMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctPINBelowMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectPIN(int max) {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void aboveMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void belowMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctUnlock() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectUnlock() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void belowMinBalancePenalty() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void activate() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void close() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

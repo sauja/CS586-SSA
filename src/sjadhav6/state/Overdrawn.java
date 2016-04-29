@@ -1,21 +1,19 @@
 package sjadhav6.state;
 
-import java.util.*;
 
 public class Overdrawn extends State {
-
-	public Overdrawn() {
-	}
-
-	public int ID = 5;
-
+	private final int ID=6;
+	public int getID()
+	{
+		return ID;
+   	}
 	public void withdraw() {
-		// TODO implement here
+		outp.displayMinBalanceMsg();
 		return;
 	}
 
 	public void balance() {
-		// TODO implement here
+		outp.displayBalance();
 		return;
 	}
 
@@ -25,7 +23,7 @@ public class Overdrawn extends State {
 	}
 
 	public void incorrectLock() {
-		// TODO implement here
+		outp.displayIncorrectPINMsg();
 		return;
 	}
 
@@ -35,8 +33,83 @@ public class Overdrawn extends State {
 	}
 
 	public void deposit() {
-		// TODO implement here
+		outp.makeDeposit();
 		return;
+	}
+@Override
+public void open() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctLogin() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectLogin() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctPINAboveMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctPINBelowMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectPIN(int max) {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void aboveMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void belowMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void correctUnlock() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectUnlock() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void belowMinBalancePenalty() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void suspend() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void activate() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void noFunds() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void close() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

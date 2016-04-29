@@ -3,30 +3,21 @@ package sjadhav6.state;
 
 import java.util.*;
 
-public class CheckPin extends State {
+public class Idle extends State{
 
-	private final int ID=2;
+	private final int ID=1;
 	public int getID()
 	{
 		return ID;
 	}
-	public void correctPINAboveMinBalance() {
-		outp.displayMenu();
+
+	public void correctLogin() {
+		outp.displayPINPrompt();
 		return ;
 	}
 
-	public void logout() {
-	
-		return ;
-	}
-
-	public void incorrectPIN(int max) {
-		outp.displayIncorrectPINMsg();
-		return ;
-	}
-
-	public void correctPINBelowMinBalance() {
-		outp.displayMenu();
+	public void incorrectLogin() {
+		outp.diplayIncorrectIDMsg();
 		return ;
 	}
 @Override
@@ -35,12 +26,22 @@ public void open() {
 		
 	}
 @Override
-public void correctLogin() {
+public void correctPINAboveMinBalance() {
 		// TODO Auto-generated method stub
 		
 	}
 @Override
-public void incorrectLogin() {
+public void correctPINBelowMinBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void incorrectPIN(int max) {
+		// TODO Auto-generated method stub
+		
+	}
+@Override
+public void logout() {
 		// TODO Auto-generated method stub
 		
 	}

@@ -109,7 +109,7 @@ public class Account1
 
 
 	public void open(String p,String y,float a) {
-		// TODO implement here
+		model.open();
 		return ;
 	}
 

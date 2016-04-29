@@ -99,7 +99,7 @@ public class OutputProcessor {
 		return;
 	}
 
-	public void appluPenalty() {
+	public void applyPenalty() {
 		// TODO implement here
 		return;
 	}

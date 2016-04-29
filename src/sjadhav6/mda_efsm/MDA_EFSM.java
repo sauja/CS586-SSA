@@ -1,28 +1,38 @@
 package sjadhav6.mda_efsm;
 
-import java.util.*;
+import sjadhav6.main.Constants;
+import sjadhav6.state.*;
 
-import sjadhav6.state.State;
 
-public class MDA_EFSM {
-
-	public MDA_EFSM() {
+public class MDA_EFSM 
+{
+	public State currState;
+	public State stateList[];
+	public int attempts;
+	static int ID;
+	
+	
+	public MDA_EFSM() 
+	{
+		stateList=new State[Constants.TOTALSTATES];
+		stateList[0]=new Start();
+		stateList[1]=new Idle();
+		stateList[2]=new CheckPin();
+		stateList[3]=new Ready();
+		stateList[4]=new CheckBalance();
+		stateList[5]=new Overdrawn();
+		stateList[6]=new Suspended();
+		
+		currState=stateList[0];
 	}
 
-	public State state;
-
-	public State stateList[];
-
-	public int attempts;
-
-
-
-
-
-
 	public void open() {
-		// TODO implement here
-		return;
+		currState.open();
+		currState.getID();
+		if(currState.getID()==Constants.START)
+		{
+			currState=stateList[1];
+		}
 	}
 
 	public void correctLogin() {
