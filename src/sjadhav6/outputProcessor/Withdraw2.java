@@ -1,9 +1,6 @@
 package sjadhav6.outputProcessor;
 
-import java.util.*;
-
 import sjadhav6.datastore.DataStore;
-import sjadhav6.datastore.DataStore1;
 import sjadhav6.datastore.DataStore2;
 
 public class Withdraw2 extends Withdraw {
@@ -11,8 +8,6 @@ public class Withdraw2 extends Withdraw {
 	public Withdraw2(DataStore data) {
 		super(data);
 	}
-
-	private DataStore data2;
 
 	public void makeWithdraw() {
 		DataStore2 data2=(DataStore2) getData();

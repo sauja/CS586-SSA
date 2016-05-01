@@ -3,7 +3,6 @@ package sjadhav6.abstractFactory;
 import sjadhav6.datastore.DataStore;
 import sjadhav6.outputProcessor.*;
 
-
 public class AccountFactory2 extends AccountAbstractFactory {
 
 	@Override
@@ -24,48 +23,39 @@ public class AccountFactory2 extends AccountAbstractFactory {
 	}
 	@Override
 	public IncorrectPIN getIncorrectPIN(DataStore data) {
-
 		return new IncorrectPIN2();
 	}
 	@Override
 	public TooManyAttempts getTooManyAttempts(DataStore data) {
-
 		return new TooManyAttempts2();
 	}
 	@Override
 	public Deposit getDeposit(DataStore data) {
-
 		return new Deposit2(data);
 	}
 	@Override
 	public Balance getBalance(DataStore data) {
-
 		return new Balance2(data);
 	}
 	@Override
 	public Withdraw getWithdraw(DataStore data) {
-
 		return new Withdraw2(data);
 	}
 	@Override
 	public MinBalance getMinBalance(DataStore data) {
-
 		return new MinBalance2();
 	}
 	@Override
 	public Penalty getPenalty(DataStore data) {
-
 		return null;
 	}
 	@Override
 	public IncorrectLock getIncorrectLock(DataStore data) {
-
-		return new IncorrectLock2();
+		return null;
 	}
 	@Override
 	public IncorrectUnlock getIncorrectUnlock(DataStore data) {
-
-		return new IncorrectUnlock2();
+		return null;
 	}
 
 }

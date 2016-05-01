@@ -2,7 +2,6 @@ package sjadhav6.InputProcessor;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 import sjadhav6.datastore.DataStore;
 import sjadhav6.datastore.DataStore2;
 import sjadhav6.main.Constants;
@@ -143,7 +142,6 @@ public class Account2
 	}
 
 	public void BALANCE() {
-		DataStore2 temp=(DataStore2)data2;
 		model.balance();
 	}
 

@@ -1,12 +1,8 @@
 package sjadhav6.outputProcessor;
 
-import java.util.*;
-
 public class IncorrectLock1 extends IncorrectLock {
-
-	public IncorrectLock1() {
+	public void incorrectLockMsg(){
+		System.out.println("Invalid pin entered for account 1");
 	}
-
-	public void incorrectLockMsg(){}
 
 }

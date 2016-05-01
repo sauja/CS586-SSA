@@ -1,19 +1,11 @@
 package sjadhav6.InputProcessor;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-
-import sjadhav6.abstractFactory.*;
 import sjadhav6.datastore.DataStore;
 import sjadhav6.datastore.DataStore1;
 import sjadhav6.main.Constants;
 import sjadhav6.mda_efsm.MDA_EFSM;
-/** 
-* This class performs various activities for Account 1
-* @author      Saurabh Jadhav
-* @version     1.0
-* 
-*/
+
 public class Account1 
 {
 	
@@ -126,7 +118,6 @@ public class Account1
 	}
 
 	public void balance() {
-		DataStore1 temp=(DataStore1)data1;
 		model.balance();
 	}
 

@@ -4,8 +4,6 @@ import sjadhav6.datastore.DataStore;
 import sjadhav6.datastore.DataStore2;
 
 public class Deposit2 extends Deposit {
-
-	private DataStore data2;
 	public Deposit2(DataStore data) {
 		super(data);
 	}

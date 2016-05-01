@@ -1,14 +1,10 @@
 package sjadhav6.state;
 
-
-
 import sjadhav6.datastore.DataStore;
-import sjadhav6.mda_efsm.MDA_EFSM;
 import sjadhav6.outputProcessor.OutputProcessor;
 
 public abstract class State 
 {
-	private MDA_EFSM model;
 	public OutputProcessor outp;
 
 	public State(DataStore data) 

@@ -1,7 +1,5 @@
 package sjadhav6.datastore;
 
-import java.util.*;
-
 public class DataStore2 extends DataStore {
 
 	public DataStore2() {
