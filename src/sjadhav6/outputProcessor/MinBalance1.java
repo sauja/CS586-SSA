@@ -8,7 +8,7 @@ public class MinBalance1 extends MinBalance {
 	}
 
 	public void displayMinBalanceMsg() {
-		// TODO implement here
+		System.out.println("Account below min balance allowed for account1");
 		return;
 	}
 

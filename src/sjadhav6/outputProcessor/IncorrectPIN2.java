@@ -8,7 +8,7 @@ public class IncorrectPIN2 extends IncorrectPIN {
 	}
 
 	public void displayIncorrectPINMsg() {
-		// TODO implement here
+		System.out.println("Incorrect PIN for account2");
 		return;
 	}
 

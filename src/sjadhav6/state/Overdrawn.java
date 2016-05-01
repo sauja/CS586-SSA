@@ -1,19 +1,25 @@
 package sjadhav6.state;
 
+import sjadhav6.datastore.DataStore;
+import sjadhav6.main.Constants;
 
 public class Overdrawn extends State {
-	private final int ID=6;
+	public Overdrawn(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+	private final int ID=Constants.OVERDRAWN;
 	public int getID()
 	{
 		return ID;
    	}
 	public void withdraw() {
-		outp.displayMinBalanceMsg();
+		outp.displayMinBalanceMsg(data);
 		return;
 	}
 
 	public void balance() {
-		outp.displayBalance();
+		outp.displayBalance(data);
 		return;
 	}
 
@@ -23,7 +29,7 @@ public class Overdrawn extends State {
 	}
 
 	public void incorrectLock() {
-		outp.displayIncorrectPINMsg();
+		outp.displayIncorrectPINMsg(data);
 		return;
 	}
 
@@ -33,7 +39,7 @@ public class Overdrawn extends State {
 	}
 
 	public void deposit() {
-		outp.makeDeposit();
+		outp.makeDeposit(data);
 		return;
 	}
 @Override
@@ -61,11 +67,7 @@ public void correctPINBelowMinBalance() {
 		// TODO Auto-generated method stub
 		
 	}
-@Override
-public void incorrectPIN(int max) {
-		// TODO Auto-generated method stub
-		
-	}
+
 @Override
 public void aboveMinBalance() {
 		// TODO Auto-generated method stub
@@ -111,5 +113,10 @@ public void close() {
 		// TODO Auto-generated method stub
 		
 	}
+@Override
+public void incorrectPIN(DataStore data) {
+	// TODO Auto-generated method stub
+	
+}
 
 }

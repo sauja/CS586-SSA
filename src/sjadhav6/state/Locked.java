@@ -2,8 +2,15 @@ package sjadhav6.state;
 
 import java.util.*;
 
+import sjadhav6.datastore.DataStore;
+import sjadhav6.main.Constants;
+
 public class Locked extends State {
-	private final int ID=5;
+	public Locked(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+	private final int ID=Constants.LOCKED;
 	
 	public int getID()
 	{
@@ -15,7 +22,7 @@ public class Locked extends State {
 	}
 
 	public void incorrectUnLock() {
-		outp.displayIncorrectPINMsg();
+		outp.displayIncorrectPINMsg(data);
 		return;
 	}
 @Override
@@ -43,11 +50,7 @@ public void correctPINBelowMinBalance() {
 		// TODO Auto-generated method stub
 		
 	}
-@Override
-public void incorrectPIN(int max) {
-		// TODO Auto-generated method stub
-		
-	}
+
 @Override
 public void logout() {
 		// TODO Auto-generated method stub
@@ -118,5 +121,10 @@ public void incorrectLock() {
 		// TODO Auto-generated method stub
 		
 	}
+@Override
+public void incorrectPIN(DataStore data) {
+	// TODO Auto-generated method stub
+	
+}
 
 }

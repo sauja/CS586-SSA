@@ -2,11 +2,20 @@ package sjadhav6.datastore;
 
 import java.util.*;
 
-public class DataStore {
+public abstract class DataStore {
 
-	public DataStore() {
+	int accountID;
+	public int getAccountID() {
+		return accountID;
 	}
-
+	public void setAccountID(int accountID) {
+		this.accountID = accountID;
+	}
+	public DataStore(int accountID) {
+		this.accountID=accountID;
+	}
+	public abstract int getAttempts();
+	public abstract void setAttempts(int attempts);
 
 
 

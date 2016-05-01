@@ -2,16 +2,23 @@ package sjadhav6.state;
 
 import java.util.*;
 
+import sjadhav6.datastore.DataStore;
+import sjadhav6.main.Constants;
+
 public class Suspended extends State {
 
-	private final int ID=7;
+	public Suspended(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+	private final int ID=Constants.SUSPENDED;
 
 	public int getID()
 	{
 		return ID;
 	}
 	public void balance() {
-		outp.displayBalance();
+		outp.displayBalance(data);
 		return;
 	}
 
@@ -54,11 +61,7 @@ public class Suspended extends State {
 		// TODO Auto-generated method stub
 		
 	}
-@Override
-public void incorrectPIN(int max) {
-		// TODO Auto-generated method stub
-		
-	}
+
 @Override
 public void logout() {
 		// TODO Auto-generated method stub
@@ -119,5 +122,10 @@ public void noFunds() {
 		// TODO Auto-generated method stub
 		
 	}
+@Override
+public void incorrectPIN(DataStore data) {
+	// TODO Auto-generated method stub
+	
+}
 
 }

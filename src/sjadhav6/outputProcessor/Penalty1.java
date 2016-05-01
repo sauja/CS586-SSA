@@ -1,7 +1,5 @@
 package sjadhav6.outputProcessor;
 
-import java.util.*;
-
 import sjadhav6.datastore.DataStore;
 
 public class Penalty1 extends Penalty {
@@ -11,7 +9,7 @@ public class Penalty1 extends Penalty {
 
 	public DataStore data1;
 
-	public void appluPenalty() {
+	public void applyPenalty() {
 		// TODO implement here
 		return;
 	}

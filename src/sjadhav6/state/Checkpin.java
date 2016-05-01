@@ -1,34 +1,42 @@
 package sjadhav6.state;
 
-
-import java.util.*;
+import sjadhav6.datastore.DataStore;
+import sjadhav6.main.Constants;
 
 public class CheckPin extends State {
 
-	private final int ID=2;
+	public CheckPin(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+	private final int ID=Constants.CHECKPIN;
 	public int getID()
 	{
 		return ID;
 	}
 	public void correctPINAboveMinBalance() {
-		outp.displayMenu();
+		outp.displayMenu(data);
+		return ;
+	}
+	public void correctPINBelowMinBalance() {
+		outp.displayMenu(data);
 		return ;
 	}
 
 	public void logout() {
+		
+		return ;
+	}
+
+	public void incorrectPIN(DataStore data) {
+		outp.displayIncorrectPINMsg(data);	
+		if(data.getAttempts()>=Constants.ACCOUNT1_MAXATTEMPT)
+			outp.displayTooManyAttemptsMsg(data);
+		else
+			data.setAttempts(data.getAttempts()+1);
+		
+	}
 	
-		return ;
-	}
-
-	public void incorrectPIN(int max) {
-		outp.displayIncorrectPINMsg();
-		return ;
-	}
-
-	public void correctPINBelowMinBalance() {
-		outp.displayMenu();
-		return ;
-	}
 @Override
 public void open() {
 		// TODO Auto-generated method stub
@@ -114,5 +122,6 @@ public void close() {
 		// TODO Auto-generated method stub
 		
 	}
+
 
 }

@@ -1,16 +1,15 @@
 package sjadhav6.outputProcessor;
 
-import java.util.*;
+import sjadhav6.datastore.DataStore;
 
-public abstract class InitiateAccount {
-
-	public InitiateAccount() {
+public abstract class InitiateAccount 
+{
+	private DataStore data;
+	public DataStore getData() {
+		return data;
 	}
-
-
-	public void initiateAccount() {
-		// TODO implement here
-		return;
+	public InitiateAccount(DataStore data) {
+		this.data = data;
 	}
-
+	public abstract void initiateAccount();
 }

@@ -6,7 +6,11 @@ import sjadhav6.datastore.DataStore;
 
 public class InitiateAccount2 extends InitiateAccount {
 
-	public InitiateAccount2() {
+	
+
+	public InitiateAccount2(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
 	}
 
 	private DataStore data2;

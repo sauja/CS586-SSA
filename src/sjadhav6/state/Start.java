@@ -1,9 +1,14 @@
 package sjadhav6.state;
 
-
+import sjadhav6.datastore.DataStore;
+import sjadhav6.main.Constants;
 
 public class Start extends State {
-	private final int ID=0;
+	public Start(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+	private final int ID=Constants.START;
 	public int getID()
 	{
 		return ID;
@@ -12,7 +17,7 @@ public class Start extends State {
 
 	public void open() 
 	{
-		outp.initiateAccount();
+		outp.initiateAccount(data);
 	}
 @Override
 public void correctLogin() {
@@ -34,11 +39,7 @@ public void correctPINBelowMinBalance() {
 		// TODO Auto-generated method stub
 		
 	}
-@Override
-public void incorrectPIN(int max) {
-		// TODO Auto-generated method stub
-		
-	}
+
 @Override
 public void logout() {
 		// TODO Auto-generated method stub
@@ -114,6 +115,13 @@ public void close() {
 		// TODO Auto-generated method stub
 		
 	}
+
+
+@Override
+public void incorrectPIN(DataStore data) {
+	// TODO Auto-generated method stub
+	
+}
 
 
 

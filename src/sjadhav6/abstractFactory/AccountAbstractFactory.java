@@ -1,80 +1,26 @@
 package sjadhav6.abstractFactory;
-/*
-import java.util.*;
 
-public class AccountAbstractFactory {
+import sjadhav6.datastore.DataStore;
+import sjadhav6.outputProcessor.*;
 
-	public AccountAbstractFactory() {
+public abstract class AccountAbstractFactory {
+	DataStore data;
+	public AccountAbstractFactory(DataStore data) {
+		super();
+		this.data = data;
 	}
-
-
-	public InitiateAccount getInitiateAccount(DataStore data) {
-		// TODO implement here
-		return;
-	}
-
-	public PINPrompt getPINPrompt() {
-		// TODO implement here
-		return;
-	}
-
-	public IncorrectID getIncorrectID() {
-		// TODO implement here
-		return;
-	}
-
-	public IncorrectPIN getIncorrectPIN() {
-		// TODO implement here
-		return;
-	}
-
-	public TooManyAttempts getTooManyAttempts() {
-		// TODO implement here
-		return;
-	}
-
-	public Menu getMenu() {
-		// TODO implement here
-		return;
-	}
-
-	public Deposit getDeposit(DataStore data) {
-		// TODO implement here
-		return;
-	}
-
-	public Balance getBalance(DataStore data) {
-		// TODO implement here
-		return;
-	}
-
-	public Withdraw getWithdraw(DataStore data) {
-		// TODO implement here
-		return;
-	}
-
-	public MinBalance getMinBalance() {
-		// TODO implement here
-		return;
-	}
-
-	public Penalty getPenalty(DataStore data) {
-		// TODO implement here
-		return;
-	}
-
-	public IncorrectLock getIncorrectLock() {
-		// TODO implement here
-		return;
-	}
-
-	public IncorrectUnlock getIncorrectUnlock() {
-		// TODO implement here
-		return;
-	}
-
-	public void Operation14() {
-		// TODO implement here
-	}
-
-}*/
+	public abstract InitiateAccount getInitiateAccount(DataStore data);
+	public abstract PINPrompt getPINPrompt(DataStore data);
+	public abstract IncorrectID getIncorrectID(DataStore data);
+	public abstract Menu getMenu(DataStore data);
+	public abstract IncorrectPIN getIncorrectPIN(DataStore data);
+	public abstract TooManyAttempts getTooManyAttempts(DataStore data);
+	public abstract Deposit getDeposit(DataStore data);
+	public abstract Balance getBalance(DataStore data);
+	public abstract Withdraw getWithdraw(DataStore data);
+	public abstract MinBalance getMinBalance(DataStore data);
+	public abstract Penalty getPenalty(DataStore data);
+	public abstract IncorrectLock getIncorrectLock(DataStore data);
+	public abstract IncorrectUnlock getIncorrectUnlock(DataStore data);
+	public AccountAbstractFactory() {}
+}

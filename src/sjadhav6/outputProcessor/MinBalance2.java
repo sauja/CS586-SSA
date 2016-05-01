@@ -8,7 +8,7 @@ public class MinBalance2 extends MinBalance {
 	}
 
 	public void displayMinBalanceMsg() {
-		// TODO implement here
+		System.out.println("No Funds for account2");
 		return;
 	}
 

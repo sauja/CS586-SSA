@@ -2,9 +2,16 @@ package sjadhav6.state;
 
 import java.util.*;
 
+import sjadhav6.datastore.DataStore;
+import sjadhav6.main.Constants;
+
 public class CheckBalance extends State {
 
-	private final int ID=4;
+	public CheckBalance(DataStore data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+	private final int ID=Constants.CHECKBALANCE;
 	public int getID()
 	{
 		return ID;
@@ -15,7 +22,7 @@ public class CheckBalance extends State {
 	}
 
 	public void belowMinBalancePenalty() {
-		outp.applyPenalty();
+		outp.applyPenalty(data);
 		return;
 	}
 
@@ -48,11 +55,7 @@ public void correctPINBelowMinBalance() {
 		// TODO Auto-generated method stub
 		
 	}
-@Override
-public void incorrectPIN(int max) {
-		// TODO Auto-generated method stub
-		
-	}
+
 @Override
 public void logout() {
 		// TODO Auto-generated method stub
@@ -113,5 +116,10 @@ public void close() {
 		// TODO Auto-generated method stub
 		
 	}
+@Override
+public void incorrectPIN(DataStore data) {
+	// TODO Auto-generated method stub
+	
+}
 
 }

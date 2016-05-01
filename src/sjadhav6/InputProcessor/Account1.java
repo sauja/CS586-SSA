@@ -3,7 +3,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import sjadhav6.abstractFactory.*;
 import sjadhav6.datastore.DataStore;
+import sjadhav6.datastore.DataStore1;
+import sjadhav6.main.Constants;
 import sjadhav6.mda_efsm.MDA_EFSM;
 /** 
 * This class performs various activities for Account 1
@@ -15,13 +18,16 @@ public class Account1
 {
 	
 	private MDA_EFSM model;
-	private DataStore data1;
+	private DataStore1 data1;
+	private AccountFactory1 af1;
 	/**
 	 * Constructor for initializing Account 1 variables
 	 */
 	public Account1() {
 		// TODO initialize model and objects
-		this.model=new MDA_EFSM();
+		this.data1=new DataStore1();
+		this.model=new MDA_EFSM(data1);
+		
 		
 	}
 	//main method to handle Account 1 interactions
@@ -108,50 +114,76 @@ public class Account1
 
 
 
-	public void open(String p,String y,float a) {
+	public void open(String p,String y,float a) 
+	{	data1.setTempBalance(a);
+		data1.setTempPIN(p);
+		data1.setTempUID(y);
 		model.open();
+		
+		System.out.println("Account Initialized bal="+data1.getBalance()+" pin="+data1.getPin()+" uid="+data1.getuID());
 		return ;
 	}
 
 	public void balance() {
-		// TODO implement here
+		model.balance();
 		return ;
 	}
 
 	public void pin( String x) {
-		// TODO implement here
-		return ;
+		if(data1.getPin().equals(x))
+		{	
+			if(data1.getBalance()>500)
+				model.correctPINAboveMinBalance();
+			else
+				model.correctPINBelowMinBalance();
+		}
+		else
+		{
+			model.incorrectPIN(Constants.ACCOUNT1_MAXATTEMPT);
+		}
+		
 	}
 
 	public void deposit( float d) {
-		// TODO implement here
+		data1.setTempDeposit(d);
+		model.deposit();
 		return ;
 	}
 
 	public void withdraw( float w) {
-		// TODO implement here
+		data1.setTempWithdraw(w);
+		model.withdraw();
 		return ;
 	}
 
 	
 
 	public void login( String y) {
-		// TODO implement here
+		if(data1.getuID().equals(y))
+			model.correctLogin();
+		else
+			model.incorrectLogin();
 		return ;
 	}
 
 	public void logout() {
-		// TODO implement here
+		model.logout();
 		return ;
 	}
 
 	public void lock( String x) {
-		// TODO implement here
+		if(data1.getPin().equals(x))
+			model.correctLock();
+		else
+			model.incorrectLock();
 		return ;
 	}
 
 	public void unlock( String x) {
-		// TODO implement here
+		if(data1.getPin().equals(x))
+			model.correctUnlock();
+		else
+			model.incorrectUnlock();
 		return ;
 	}
 

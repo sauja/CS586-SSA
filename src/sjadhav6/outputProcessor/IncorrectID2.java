@@ -8,7 +8,7 @@ public class IncorrectID2 extends IncorrectID {
 	}
 
 	public void diplayIncorrectIDMsg() {
-		// TODO implement here
+		System.out.println("Incorrect user ID for account2");
 		return;
 	}
 
