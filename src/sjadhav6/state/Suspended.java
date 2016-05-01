@@ -18,7 +18,7 @@ public class Suspended extends State {
 		return ID;
 	}
 	public void balance() {
-		outp.displayBalance(data);
+		outp.displayBalance();
 		return;
 	}
 
@@ -123,7 +123,7 @@ public void noFunds() {
 		
 	}
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

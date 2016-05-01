@@ -15,11 +15,11 @@ public class CheckPin extends State {
 		return ID;
 	}
 	public void correctPINAboveMinBalance() {
-		outp.displayMenu(data);
+		outp.displayMenu();
 		return ;
 	}
 	public void correctPINBelowMinBalance() {
-		outp.displayMenu(data);
+		outp.displayMenu();
 		return ;
 	}
 
@@ -28,10 +28,11 @@ public class CheckPin extends State {
 		return ;
 	}
 
-	public void incorrectPIN(DataStore data) {
-		outp.displayIncorrectPINMsg(data);	
+	public void incorrectPIN() {
+		outp.displayIncorrectPINMsg();	
+		DataStore data=outp.getData();
 		if(data.getAttempts()>=Constants.ACCOUNT1_MAXATTEMPT)
-			outp.displayTooManyAttemptsMsg(data);
+			outp.displayTooManyAttemptsMsg();
 		else
 			data.setAttempts(data.getAttempts()+1);
 		

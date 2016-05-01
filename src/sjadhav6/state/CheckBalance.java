@@ -22,7 +22,7 @@ public class CheckBalance extends State {
 	}
 
 	public void belowMinBalancePenalty() {
-		outp.applyPenalty(data);
+		outp.applyPenalty();
 		return;
 	}
 
@@ -117,7 +117,7 @@ public void close() {
 		
 	}
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

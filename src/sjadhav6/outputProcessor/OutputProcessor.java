@@ -23,122 +23,136 @@ public class OutputProcessor {
 	private IncorrectLock incorrectLock;
 	private IncorrectUnlock incorrectUnlock;
 
-	public void initiateAccount(DataStore data) 
+	private DataStore data;
+
+	public DataStore getData() {
+		return data;
+	}
+
+	public void setData(DataStore data) {
+		this.data = data;
+	}
+
+	public OutputProcessor(DataStore data) {
+		this.data=data;
+	}
+
+	public void initiateAccount() 
 	{
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			initiateAccount=af.getInitiateAccount(data);
 			initiateAccount.initiateAccount();
 		}
 	}
 	
-	public void displayPINPrompt(DataStore data) {
+	public void displayPINPrompt() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			pinPrompt=af.getPINPrompt(data);
 			pinPrompt.displayPINPrompt();
 		}
 	}
 
-	public void diplayIncorrectIDMsg(DataStore data) 
+	public void diplayIncorrectIDMsg() 
 	{
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			incorrectID=af.getIncorrectID(data);
 			incorrectID.diplayIncorrectIDMsg();
 		}
 	}
 	
-	public void displayMenu(DataStore data) 
+	public void displayMenu() 
 	{
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			menu=af.getMenu(data);
 			menu.displayMenu();
 		}
 	}
 	
-	public void displayIncorrectPINMsg(DataStore data) 
+	public void displayIncorrectPINMsg() 
 	{
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			incorrectPIN=af.getIncorrectPIN(data);
 			incorrectPIN.displayIncorrectPINMsg();
 		}
 	}
 
-	public void displayTooManyAttemptsMsg(DataStore data) {
+	public void displayTooManyAttemptsMsg() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			tooManyAttempts=af.getTooManyAttempts(data);
 			tooManyAttempts.displayTooManyAttemptsMsg();
 		}
 	}
 
-	public void makeDeposit(DataStore data) {
+	public void makeDeposit() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			deposit=af.getDeposit(data);
 			deposit.makeDeposit();
 		}
 	}
 
-	public void displayBalance(DataStore data) {
+	public void displayBalance() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			balance=af.getBalance(data);
 			balance.displayBalance();
 		}
 	}
 
-	public void makeWithdraw(DataStore data) {
+	public void makeWithdraw() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			withdraw=af.getWithdraw(data);
 			withdraw.makeWithdraw();
 		}
 	}
 
-	public void displayMinBalanceMsg(DataStore data) {
+	public void displayMinBalanceMsg() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			minBalance=af.getMinBalance(data);
 			minBalance.displayMinBalanceMsg();
 		}
 	}
 
-	public void applyPenalty(DataStore data) {
+	public void applyPenalty() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			penalty=af.getPenalty(data);
 			penalty.applyPenalty();
 		}
 	}
 
-	public void incorrectLockMsg(DataStore data) {
+	public void incorrectLockMsg() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			incorrectLock=af.getIncorrectLock(data);
 			incorrectLock.incorrectLockMsg();
 		}
 	}
 
-	public void incorrectUnlockMsg(DataStore data) {
+	public void incorrectUnlockMsg() {
 		if(data.getAccountID()==1)
 		{
-			af=new AccountFactory1(data);
+			af=new AccountFactory1();
 			incorrectUnlock=af.getIncorrectUnlock(data);
 			incorrectUnlock.incorrectUnlockMsg();
 		}

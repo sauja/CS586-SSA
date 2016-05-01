@@ -17,22 +17,22 @@ public class Ready extends State {
 		return ID;
 	}
 	public void noFunds() {
-		outp.displayMinBalanceMsg(data);
+		outp.displayMinBalanceMsg();
 		return;
 	}
 
 	public void incorrectLock() {
-		outp.displayIncorrectPINMsg(data);
+		outp.displayIncorrectPINMsg();
 		return;
 	}
 
 	public void deposit() {
-		outp.makeDeposit(data);
+		outp.makeDeposit();
 		return;
 	}
 
 	public void balance() {
-		outp.displayBalance(data);
+		outp.displayBalance();
 		return;
 	}
 
@@ -47,7 +47,7 @@ public class Ready extends State {
 	}
 
 	public void withdraw() {
-		outp.makeWithdraw(data);
+		outp.makeWithdraw();
 		return;
 	}
 
@@ -117,7 +117,7 @@ public void close() {
 		
 	}
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

@@ -7,11 +7,7 @@ import sjadhav6.outputProcessor.*;
 
 public class AccountFactory1 extends AccountAbstractFactory {
 
-	private DataStore data1;
 
-	public AccountFactory1(DataStore data1) {
-		super(data1);
-	}
 	@Override
 	public InitiateAccount getInitiateAccount(DataStore data) {
 		return new InitiateAccount1(data);
@@ -41,17 +37,17 @@ public class AccountFactory1 extends AccountAbstractFactory {
 	@Override
 	public Deposit getDeposit(DataStore data) {
 		// TODO Auto-generated method stub
-		return new Deposit1();
+		return new Deposit1(data);
 	}
 	@Override
 	public Balance getBalance(DataStore data) {
 		// TODO Auto-generated method stub
-		return new Balance1();
+		return new Balance1(data);
 	}
 	@Override
 	public Withdraw getWithdraw(DataStore data) {
 		// TODO Auto-generated method stub
-		return new Withdraw1();
+		return new Withdraw1(data);
 	}
 	@Override
 	public MinBalance getMinBalance(DataStore data) {
@@ -61,7 +57,7 @@ public class AccountFactory1 extends AccountAbstractFactory {
 	@Override
 	public Penalty getPenalty(DataStore data) {
 		// TODO Auto-generated method stub
-		return new Penalty1();
+		return new Penalty1(data);
 	}
 	@Override
 	public IncorrectLock getIncorrectLock(DataStore data) {

@@ -17,7 +17,7 @@ public class Start extends State {
 
 	public void open() 
 	{
-		outp.initiateAccount(data);
+		outp.initiateAccount();
 	}
 @Override
 public void correctLogin() {
@@ -118,7 +118,7 @@ public void close() {
 
 
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

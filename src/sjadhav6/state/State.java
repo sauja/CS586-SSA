@@ -10,11 +10,10 @@ public abstract class State
 {
 	private MDA_EFSM model;
 	public OutputProcessor outp;
-	public DataStore data;
+
 	public State(DataStore data) 
 	{
-		this.data=data;
-		this.outp=new OutputProcessor();
+		this.outp=new OutputProcessor(data);
 	}
 
 	public abstract int getID();
@@ -23,7 +22,7 @@ public abstract class State
 	public abstract void incorrectLogin();
 	public abstract void correctPINAboveMinBalance();
 	public abstract void correctPINBelowMinBalance();
-	public abstract void incorrectPIN(DataStore data);
+	public abstract void incorrectPIN();
 	public abstract void logout();
 	public abstract void balance();
 	public abstract void deposit();

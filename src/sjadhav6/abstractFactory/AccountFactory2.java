@@ -1,79 +1,71 @@
 package sjadhav6.abstractFactory;
-/*
-import java.util.*;
+
+import sjadhav6.datastore.DataStore;
+import sjadhav6.outputProcessor.*;
+
 
 public class AccountFactory2 extends AccountAbstractFactory {
 
-	public AccountFactory2() {
-	}
-
+	@Override
 	public InitiateAccount getInitiateAccount(DataStore data) {
-		// TODO implement here
-		return;
+		return new InitiateAccount2(data);
 	}
-
-	public PINPrompt getPINPrompt() {
-		// TODO implement here
-		return;
+	@Override
+	public PINPrompt getPINPrompt(DataStore data) {
+		return new PINPrompt2();
 	}
-
-	public IncorrectID getIncorrectID() {
-		// TODO implement here
-		return;
+	@Override
+	public IncorrectID getIncorrectID(DataStore data) {
+		return new IncorrectID2();
 	}
-
-	public IncorrectPIN getIncorrectPIN() {
-		// TODO implement here
-		return;
+	@Override
+	public Menu getMenu(DataStore data) {
+		return new Menu2();
 	}
-
-	public TooManyAttempts getTooManyAttempts() {
-		// TODO implement here
-		return;
+	@Override
+	public IncorrectPIN getIncorrectPIN(DataStore data) {
+		// TODO Auto-generated method stub
+		return new IncorrectPIN2();
 	}
-
-	public Menu getMenu() {
-		// TODO implement here
-		return;
+	@Override
+	public TooManyAttempts getTooManyAttempts(DataStore data) {
+		// TODO Auto-generated method stub
+		return new TooManyAttempts2();
 	}
-
+	@Override
 	public Deposit getDeposit(DataStore data) {
-		// TODO implement here
-		return;
+		// TODO Auto-generated method stub
+		return new Deposit2(data);
 	}
-
+	@Override
 	public Balance getBalance(DataStore data) {
-		// TODO implement here
-		return;
+		// TODO Auto-generated method stub
+		return new Balance2(data);
 	}
-
+	@Override
 	public Withdraw getWithdraw(DataStore data) {
-		// TODO implement here
-		return;
+		// TODO Auto-generated method stub
+		return new Withdraw2(data);
 	}
-
-	public MinBalance getMinBalance() {
-		// TODO implement here
-		return;
+	@Override
+	public MinBalance getMinBalance(DataStore data) {
+		// TODO Auto-generated method stub
+		return new MinBalance2();
 	}
-
+	@Override
 	public Penalty getPenalty(DataStore data) {
-		// TODO implement here
-		return;
+		// TODO Auto-generated method stub
+		return new Penalty2(data);
+	}
+	@Override
+	public IncorrectLock getIncorrectLock(DataStore data) {
+		// TODO Auto-generated method stub
+		return new IncorrectLock2();
+	}
+	@Override
+	public IncorrectUnlock getIncorrectUnlock(DataStore data) {
+		// TODO Auto-generated method stub
+		return new IncorrectUnlock2();
 	}
 
-	public IncorrectLock getIncorrectLock() {
-		// TODO implement here
-		return;
-	}
-
-	public IncorrectUnlock getIncorrectUnlock() {
-		// TODO implement here
-		return;
-	}
-
-	public void Operation14() {
-		// TODO implement here
-	}
-
-}*/
+}

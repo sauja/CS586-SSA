@@ -19,12 +19,12 @@ public class Idle extends State{
 	}
 
 	public void correctLogin() {
-		outp.displayPINPrompt(data);
+		outp.displayPINPrompt();
 		return ;
 	}
 
 	public void incorrectLogin() {
-		outp.diplayIncorrectIDMsg(data);
+		outp.diplayIncorrectIDMsg();
 		return ;
 	}
 @Override
@@ -120,7 +120,7 @@ public void close() {
 	}
 
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

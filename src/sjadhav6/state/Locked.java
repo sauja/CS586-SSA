@@ -22,7 +22,7 @@ public class Locked extends State {
 	}
 
 	public void incorrectUnLock() {
-		outp.displayIncorrectPINMsg(data);
+		outp.displayIncorrectPINMsg();
 		return;
 	}
 @Override
@@ -122,7 +122,7 @@ public void incorrectLock() {
 		
 	}
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

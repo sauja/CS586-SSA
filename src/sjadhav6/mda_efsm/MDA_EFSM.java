@@ -9,12 +9,12 @@ public class MDA_EFSM
 {
 	private State stateList[];
 	private int stateID=0;
-	private DataStore data;
+
 
 
 	public MDA_EFSM(DataStore data) 
 	{
-		this.data=data;
+		
 		stateList=new State[Constants.TOTALSTATES];
 		stateList[0]=new Start(data);
 		stateList[1]=new Idle(data);
@@ -24,8 +24,6 @@ public class MDA_EFSM
 		stateList[5]=new Locked(data);
 		stateList[6]=new Overdrawn(data);
 		stateList[7]=new Suspended(data);
-
-
 	}
 
 	public int getID() {
@@ -90,15 +88,15 @@ public class MDA_EFSM
 	{
 		if (stateID==Constants.CHECKPIN)
 		{
-			if(data.getAttempts()==max)
+			if(stateList[stateID].outp.getData().getAttempts()==max)
 			{
 				System.out.println("Checkpin-->Idle");
-				stateList[stateID].incorrectPIN(data);
+				stateList[stateID].incorrectPIN();
 				stateID=Constants.IDLE;
 			}
 			else
 			{
-				stateList[stateID].incorrectPIN(data);
+				stateList[stateID].incorrectPIN();
 				stateID=Constants.CHECKPIN;
 			}
 		}
@@ -115,7 +113,10 @@ public class MDA_EFSM
 
 	public void balance() {
 		if(stateID==Constants.SUSPENDED||stateID==Constants.READY||stateID==Constants.OVERDRAWN)
+		{
 			stateList[stateID].balance();
+			System.out.println("Suspended||Ready||Overdrawn-->Suspended||Ready||Overdrawn");
+		}
 	}
 
 	public void close() {

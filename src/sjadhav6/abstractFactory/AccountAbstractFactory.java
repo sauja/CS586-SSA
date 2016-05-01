@@ -4,11 +4,7 @@ import sjadhav6.datastore.DataStore;
 import sjadhav6.outputProcessor.*;
 
 public abstract class AccountAbstractFactory {
-	DataStore data;
-	public AccountAbstractFactory(DataStore data) {
-		super();
-		this.data = data;
-	}
+	
 	public abstract InitiateAccount getInitiateAccount(DataStore data);
 	public abstract PINPrompt getPINPrompt(DataStore data);
 	public abstract IncorrectID getIncorrectID(DataStore data);

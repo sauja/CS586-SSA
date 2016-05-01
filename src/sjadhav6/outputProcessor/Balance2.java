@@ -3,17 +3,16 @@ package sjadhav6.outputProcessor;
 import java.util.*;
 
 import sjadhav6.datastore.DataStore;
+import sjadhav6.datastore.DataStore1;
+import sjadhav6.datastore.DataStore2;
 
 public class Balance2 extends Balance {
 
-	public Balance2() {
+	public Balance2(DataStore data) {
+		super(data);
 	}
-
-	private DataStore data2;
-
 	public void displayBalance() {
-		// TODO implement here
-		return;
+		DataStore2 data2=(DataStore2) getData();
+		System.out.println("Balance for account1: $"+data2.getBalance());
 	}
-
 }

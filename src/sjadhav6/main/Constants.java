@@ -12,5 +12,8 @@ public class Constants
 	public final static int OVERDRAWN=6;
 	public final static int SUSPENDED=7;
 	public static final int ACCOUNT1_MAXATTEMPT = 3;
+	public static final float ACCOUNT1_PENALTY = 20;
+	
+	public static final int ACCOUNT2_MAXATTEMPT = 2;
 
 }

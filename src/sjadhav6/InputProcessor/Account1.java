@@ -18,8 +18,8 @@ public class Account1
 {
 	
 	private MDA_EFSM model;
-	private DataStore1 data1;
-	private AccountFactory1 af1;
+	private DataStore data1;
+	
 	/**
 	 * Constructor for initializing Account 1 variables
 	 */
@@ -31,7 +31,7 @@ public class Account1
 		
 	}
 	//main method to handle Account 1 interactions
-	public void run() throws IOException {
+	public void run() {
 		
 		System.out.println("In Account 1");
 		BufferedReader readConsole = new BufferedReader(new InputStreamReader(System.in));
@@ -87,16 +87,16 @@ public class Account1
 						logout();
 						break;
 					case "8": //To lock account
-						String x1;
+						String pin1;
 						System.out.println("Enter PIN text");
-						x1=readConsole.readLine();
-						lock(x1);
+						pin1=readConsole.readLine();
+						lock(pin1);
 						break;
 					case "9": //To unlock account
-						String x2;
+						String pin2;
 						System.out.println("Enter PIN text");
-						x2=readConsole.readLine();
-						unlock(x2);
+						pin2=readConsole.readLine();
+						unlock(pin2);
 						break;
 					case "10": //To exit
 						break;
@@ -109,31 +109,37 @@ public class Account1
 			{
 				System.out.println("Invalid Input");;
 			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
 		}//end while
 	}
 
 
 
 	public void open(String p,String y,float a) 
-	{	data1.setTempBalance(a);
-		data1.setTempPIN(p);
-		data1.setTempUID(y);
+	{	DataStore1 temp=(DataStore1)data1;
+		temp.setTempBalance(a);
+		temp.setTempPIN(p);
+		temp.setTempUID(y);
 		model.open();
 		
-		System.out.println("Account Initialized bal="+data1.getBalance()+" pin="+data1.getPin()+" uid="+data1.getuID());
-		return ;
+		System.out.println("Account Initialized bal="+temp.getBalance()+" pin="+temp.getPin()+" uid="+temp.getuID());
 	}
 
 	public void balance() {
+		DataStore1 temp=(DataStore1)data1;
 		model.balance();
-		return ;
 	}
 
 	public void pin( String x) {
-		if(data1.getPin().equals(x))
+		DataStore1 temp=(DataStore1)data1;
+		if(temp.getPin().equals(x))
 		{	
-			if(data1.getBalance()>500)
+			if(temp.getBalance()>500){
 				model.correctPINAboveMinBalance();
+			}
 			else
 				model.correctPINBelowMinBalance();
 		}
@@ -145,21 +151,34 @@ public class Account1
 	}
 
 	public void deposit( float d) {
-		data1.setTempDeposit(d);
+		DataStore1 temp=(DataStore1)data1;
+		temp.setTempDeposit(d);
 		model.deposit();
-		return ;
+		if(temp.getBalance()>500)
+			model.aboveMinBalance();
+		else
+			model.belowMinBalance();
 	}
 
 	public void withdraw( float w) {
-		data1.setTempWithdraw(w);
-		model.withdraw();
-		return ;
+		DataStore1 temp=(DataStore1)data1;
+		temp.setTempWithdraw(w);
+		float bal=temp.getBalance();
+		if(bal-w>=500)
+		{
+			model.withdraw();
+			model.aboveMinBalance();
+		}
+		else
+		{
+			model.withdraw();
+			model.belowMinBalancePenalty();
+		}
 	}
 
-	
-
 	public void login( String y) {
-		if(data1.getuID().equals(y))
+		DataStore1 temp=(DataStore1)data1;
+		if(temp.getuID().equals(y))
 			model.correctLogin();
 		else
 			model.incorrectLogin();
@@ -172,7 +191,8 @@ public class Account1
 	}
 
 	public void lock( String x) {
-		if(data1.getPin().equals(x))
+		DataStore1 temp=(DataStore1)data1;
+		if(temp.getPin().equals(x))
 			model.correctLock();
 		else
 			model.incorrectLock();
@@ -180,8 +200,15 @@ public class Account1
 	}
 
 	public void unlock( String x) {
-		if(data1.getPin().equals(x))
+		DataStore1 temp=(DataStore1)data1;
+		if(temp.getPin().equals(x))
+		{
 			model.correctUnlock();
+			if(temp.getBalance()>500)
+				model.aboveMinBalance();
+			else
+				model.belowMinBalance();
+		}
 		else
 			model.incorrectUnlock();
 		return ;

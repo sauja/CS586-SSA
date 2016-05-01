@@ -19,7 +19,15 @@ public class DataStore1 extends DataStore {
 	private float tempDeposit;
 	private float tempWithdraw;
 	
+	boolean belowMinFlag=false;
 	
+	
+	public boolean isBelowMinFlag() {
+		return belowMinFlag;
+	}
+	public void setBelowMinFlag(boolean belowMinFlag) {
+		this.belowMinFlag = belowMinFlag;
+	}
 	public String getTempUID() {
 		return tempUID;
 	}

@@ -14,12 +14,12 @@ public class Overdrawn extends State {
 		return ID;
    	}
 	public void withdraw() {
-		outp.displayMinBalanceMsg(data);
+		outp.displayMinBalanceMsg();
 		return;
 	}
 
 	public void balance() {
-		outp.displayBalance(data);
+		outp.displayBalance();
 		return;
 	}
 
@@ -29,7 +29,7 @@ public class Overdrawn extends State {
 	}
 
 	public void incorrectLock() {
-		outp.displayIncorrectPINMsg(data);
+		outp.displayIncorrectPINMsg();
 		return;
 	}
 
@@ -39,7 +39,7 @@ public class Overdrawn extends State {
 	}
 
 	public void deposit() {
-		outp.makeDeposit(data);
+		outp.makeDeposit();
 		return;
 	}
 @Override
@@ -114,7 +114,7 @@ public void close() {
 		
 	}
 @Override
-public void incorrectPIN(DataStore data) {
+public void incorrectPIN() {
 	// TODO Auto-generated method stub
 	
 }

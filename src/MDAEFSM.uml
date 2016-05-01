@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_xHmnsA3OEeaRU9xxExDVUg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_xHnOwA3OEeaRU9xxExDVUg" source="codegen">
         <details xmi:id="_xHnOwQ3OEeaRU9xxExDVUg" key="codegenDirectory" value="/ss/src"/>
-        <details xmi:id="_xQCK8A3OEeaRU9xxExDVUg" key="AssociatedSourceCode" value="/SSAProject/src/sjadhav6/InputProcessor/Account1.java;1233197407/1;/SSAProject/src/sjadhav6/datastore/DataStore.java;4137406522/1;/SSAProject/src/sjadhav6/datastore/DataStore1.java;2017224130/1;/SSAProject/src/sjadhav6/datastore/DataStore2.java;2964781286/1;/SSAProject/src/sjadhav6/outputProcessor/OutputProcessor.java;2110029727/1;/SSAProject/src/sjadhav6/mda_efsm/MDA_EFSM.java;1453716258/1;/SSAProject/src/sjadhav6/InputProcessor/Account2.java;4157305393/1;/SSAProject/src/sjadhav6/datastore/TempDataStore.java;344112987/1;"/>
+        <details xmi:id="_xQCK8A3OEeaRU9xxExDVUg" key="AssociatedSourceCode" value="/SSAProject/src/sjadhav6/InputProcessor/Account1.java;3756828677/1;/SSAProject/src/sjadhav6/datastore/DataStore.java;117309972/1;/SSAProject/src/sjadhav6/datastore/DataStore1.java;2751651263/1;/SSAProject/src/sjadhav6/datastore/DataStore2.java;512455827/1;/SSAProject/src/sjadhav6/outputProcessor/OutputProcessor.java;2703991264/1;/SSAProject/src/sjadhav6/mda_efsm/MDA_EFSM.java;3674751109/1;/SSAProject/src/sjadhav6/InputProcessor/Account2.java;4157305393/1;/SSAProject/src/sjadhav6/state/State.java;2314266636/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_xNi3oA3OEeaRU9xxExDVUg">
@@ -39,7 +39,63 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_xNw6EA3OEeaRU9xxExDVUg" name="Constants"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_xNcJ8g3OEeaRU9xxExDVUg" name="state">
-        <packagedElement xmi:type="uml:Class" xmi:id="_xNz9YA3OEeaRU9xxExDVUg" name="State"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_xNz9YA3OEeaRU9xxExDVUg" name="State" isAbstract="true">
+          <eAnnotations xmi:id="_OLyfIA-9EeaRU9xxExDVUg" source="http://ns.yatta.de/umllab">
+            <contents xmi:type="ecore:EAnnotation" xmi:id="_OL0UUA-9EeaRU9xxExDVUg" source="codegen">
+              <details xmi:id="_OL0UUQ-9EeaRU9xxExDVUg" key="codegenDirectory" value="/SSAProject/src"/>
+            </contents>
+          </eAnnotations>
+          <ownedAttribute xmi:id="_OMPLEA-9EeaRU9xxExDVUg" name="model" visibility="private" type="_xNiQkA3OEeaRU9xxExDVUg" association="_OMY8EA-9EeaRU9xxExDVUg"/>
+          <ownedAttribute xmi:id="_OMUqoA-9EeaRU9xxExDVUg" name="outp" type="_C0A_EA3PEeaRU9xxExDVUg" association="_OMaKMQ-9EeaRU9xxExDVUg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OMXG4A-9EeaRU9xxExDVUg" name="State" specification="_OMLgsA-9EeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_OMXG4Q-9EeaRU9xxExDVUg" name="data" type="_3iyicA3OEeaRU9xxExDVUg"/>
+            <ownedParameter xmi:id="_OMXG4g-9EeaRU9xxExDVUg" type="_xNz9YA3OEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.outp=new OutputProcessor(data);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_OL2wkA-9EeaRU9xxExDVUg" name="getID" isAbstract="true">
+            <ownedParameter xmi:id="_OL2wkQ-9EeaRU9xxExDVUg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_OL3XoA-9EeaRU9xxExDVUg" name="open" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL3-sA-9EeaRU9xxExDVUg" name="correctLogin" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL3-sQ-9EeaRU9xxExDVUg" name="incorrectLogin" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL4lwA-9EeaRU9xxExDVUg" name="correctPINAboveMinBalance" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL4lwQ-9EeaRU9xxExDVUg" name="correctPINBelowMinBalance" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL5M0A-9EeaRU9xxExDVUg" name="logout" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL5M0Q-9EeaRU9xxExDVUg" name="balance" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL5z4A-9EeaRU9xxExDVUg" name="deposit" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL5z4Q-9EeaRU9xxExDVUg" name="aboveMinBalance" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL5z4g-9EeaRU9xxExDVUg" name="belowMinBalance" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL6a8A-9EeaRU9xxExDVUg" name="correctLock" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL6a8Q-9EeaRU9xxExDVUg" name="incorrectLock" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL7CAA-9EeaRU9xxExDVUg" name="correctUnlock" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL7CAQ-9EeaRU9xxExDVUg" name="incorrectUnlock" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL7CAg-9EeaRU9xxExDVUg" name="withdraw" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL7pEA-9EeaRU9xxExDVUg" name="belowMinBalancePenalty" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL7pEQ-9EeaRU9xxExDVUg" name="suspend" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL8QIA-9EeaRU9xxExDVUg" name="activate" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL8QIQ-9EeaRU9xxExDVUg" name="noFunds" isAbstract="true"/>
+          <ownedOperation xmi:id="_OL83MA-9EeaRU9xxExDVUg" name="close" isAbstract="true"/>
+          <ownedOperation xmi:id="_OMLgsA-9EeaRU9xxExDVUg" name="State" method="_OMXG4A-9EeaRU9xxExDVUg">
+            <eAnnotations xmi:id="_OMMHwA-9EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_OMMHwQ-9EeaRU9xxExDVUg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_OMLgsQ-9EeaRU9xxExDVUg" name="data" type="_3iyicA3OEeaRU9xxExDVUg"/>
+            <ownedParameter xmi:id="_OMMHwg-9EeaRU9xxExDVUg" type="_xNz9YA3OEeaRU9xxExDVUg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_OMMu0A-9EeaRU9xxExDVUg" name="incorrectPIN" isAbstract="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OMY8EA-9EeaRU9xxExDVUg" name="" memberEnd="_OMY8EQ-9EeaRU9xxExDVUg _OMPLEA-9EeaRU9xxExDVUg">
+          <ownedEnd xmi:id="_OMY8EQ-9EeaRU9xxExDVUg" name="" type="_xNz9YA3OEeaRU9xxExDVUg" association="_OMY8EA-9EeaRU9xxExDVUg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OMaKMQ-9EeaRU9xxExDVUg" name="" memberEnd="_OMaKMg-9EeaRU9xxExDVUg _OMUqoA-9EeaRU9xxExDVUg">
+          <ownedEnd xmi:id="_OMaKMg-9EeaRU9xxExDVUg" name="" type="_xNz9YA3OEeaRU9xxExDVUg" association="_OMaKMQ-9EeaRU9xxExDVUg"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_xNemMA3OEeaRU9xxExDVUg" name="mda_efsm">
         <packagedElement xmi:type="uml:Class" xmi:id="_xNiQkA3OEeaRU9xxExDVUg" name="MDA_EFSM">
@@ -48,17 +104,13 @@
               <details xmi:id="_snagYg3WEeaRU9xxExDVUg" key="codegenDirectory" value="/SSAProject/src"/>
             </contents>
           </eAnnotations>
-          <ownedAttribute xmi:id="_xN1ykA3OEeaRU9xxExDVUg" name="currState" visibility="private" type="_xNz9YA3OEeaRU9xxExDVUg" association="_snsNMA3WEeaRU9xxExDVUg"/>
           <ownedAttribute xmi:id="_xN2ZoQ3OEeaRU9xxExDVUg" name="stateList" visibility="private" type="_xNz9YA3OEeaRU9xxExDVUg" association="_snsNMw3WEeaRU9xxExDVUg">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xN2Zog3OEeaRU9xxExDVUg" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_xN3Asg3OEeaRU9xxExDVUg" name="attempts" visibility="private">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_xN3nwQ3OEeaRU9xxExDVUg" name="stateID" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_-qHvYA9sEeaRU9xxExDVUg" value="0"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_vSOq4A8VEeaRU9xxExDVUg" name="data" visibility="private" type="_3iyicA3OEeaRU9xxExDVUg" association="_vSRHIA8VEeaRU9xxExDVUg"/>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN414A3OEeaRU9xxExDVUg" name="MDA_EFSM" specification="_xNkFwA3OEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_57AncA8VEeaRU9xxExDVUg" type="_xNiQkA3OEeaRU9xxExDVUg" direction="return">
               <name xsi:nil="true"/>
@@ -66,61 +118,14 @@
             <ownedParameter xmi:id="_57AncQ8VEeaRU9xxExDVUg" name="data" type="_3iyicA3OEeaRU9xxExDVUg"/>
             <language>java</language>
             <body>stateList=new State[Constants.TOTALSTATES];
-		stateList[0]=new Start();
-		stateList[1]=new Idle();
-		stateList[2]=new CheckPin();
-		stateList[3]=new Ready();
-		stateList[4]=new CheckBalance();
-		stateList[5]=new Locked();
-		stateList[6]=new Overdrawn();
-		stateList[7]=new Suspended();
-		
-		currState=stateList[0];
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN414g3OEeaRU9xxExDVUg" name="open" specification="_xNks0A3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>stateList[stateID].open();
-		if(stateList[stateID].getID()==Constants.START)
-		{
-			stateID=Constants.IDLE;
-		}
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN414w3OEeaRU9xxExDVUg" name="correctLogin" specification="_xNks0Q3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>stateList[stateID].correctLogin();
-		if(stateList[stateID].getID()==Constants.IDLE)
-		{
-			stateID=Constants.CHECKPIN;
-		}
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN415A3OEeaRU9xxExDVUg" name="incorrectLogin" specification="_xNks0g3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>stateList[stateID].incorrectLogin();
-		if(stateList[stateID].getID()==Constants.IDLE)
-		{
-			stateID=Constants.IDLE;
-		}
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN415Q3OEeaRU9xxExDVUg" name="correctPINAboveMinBalance" specification="_xNks0w3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>stateList[stateID].correctPINAboveMinBalance();
-		if(stateList[stateID].getID()==Constants.CHECKPIN)
-		{
-			stateID=Constants.READY;
-		}
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN5c8A3OEeaRU9xxExDVUg" name="correctPINBelowMinBalance" specification="_xNlT4A3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>stateList[stateID].correctPINBelowMinBalance();
-		if(stateList[stateID].getID()==Constants.CHECKPIN)
-		{
-			stateID=Constants.OVERDRAWN;
-		}
+		stateList[0]=new Start(data);
+		stateList[1]=new Idle(data);
+		stateList[2]=new CheckPin(data);
+		stateList[3]=new Ready(data);
+		stateList[4]=new CheckBalance(data);
+		stateList[5]=new Locked(data);
+		stateList[6]=new Overdrawn(data);
+		stateList[7]=new Suspended(data);
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN5c8Q3OEeaRU9xxExDVUg" name="incorrectPIN" specification="_xNlT4Q3OEeaRU9xxExDVUg">
@@ -128,86 +133,134 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
-            <body>stateList[stateID].incorrectPIN(max);
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN5c8w3OEeaRU9xxExDVUg" name="logout" specification="_xNlT4w3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>stateList[stateID].logout();
-		return;
+            <body>if (stateID==Constants.CHECKPIN)
+		{
+			if(stateList[stateID].outp.getData().getAttempts()==max)
+			{
+				System.out.println(&quot;Checkpin-->Idle&quot;);
+				stateList[stateID].incorrectPIN();
+				stateID=Constants.IDLE;
+			}
+			else
+			{
+				stateList[stateID].incorrectPIN();
+				stateID=Constants.CHECKPIN;
+			}
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN5c9A3OEeaRU9xxExDVUg" name="balance" specification="_xNl68A3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].balance();
-		return;
+            <body>if(stateID==Constants.SUSPENDED||stateID==Constants.READY||stateID==Constants.OVERDRAWN)
+			stateList[stateID].balance();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN5c9Q3OEeaRU9xxExDVUg" name="deposit" specification="_xNl68Q3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].deposit();
-		return;
+            <body>if (stateID==Constants.READY)
+		{
+			System.out.println(&quot;ready-->ready&quot;);
+			stateList[stateID].deposit();
+			stateID=Constants.READY;
+		}
+		if (stateID==Constants.OVERDRAWN)
+		{
+			System.out.println(&quot;Overdrawn-->Checkbalance&quot;);
+			stateList[stateID].deposit();
+			stateID=Constants.CHECKBALANCE;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN5c9g3OEeaRU9xxExDVUg" name="aboveMinBalance" specification="_xNl68g3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].aboveMinBalance();
-		return;
+            <body>if (stateID==Constants.CHECKBALANCE)
+		{
+			System.out.println(&quot;CheckBalance-->ready&quot;);
+			stateList[stateID].aboveMinBalance();
+			stateID=Constants.READY;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EAA3OEeaRU9xxExDVUg" name="belowMinBalance" specification="_xNl68w3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].belowMinBalance();
-		return;
+            <body>if (stateID==Constants.CHECKBALANCE)
+		{
+			System.out.println(&quot;CheckBalance-->Overdrawn&quot;);
+			stateList[stateID].belowMinBalance();
+			stateID=Constants.OVERDRAWN;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EAQ3OEeaRU9xxExDVUg" name="correctLock" specification="_xNmiAA3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].correctLock();
-		return;
+            <body>if (stateID==Constants.READY||stateID==Constants.OVERDRAWN)
+		{
+			System.out.println(&quot;Ready|Overdrawn-->Locked&quot;);
+			stateList[stateID].correctLock();
+			stateID=Constants.LOCKED;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EAg3OEeaRU9xxExDVUg" name="incorrectUnlock" specification="_xNmiAQ3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].incorrectUnlock();
-		return;
+            <body>if (stateID==Constants.LOCKED)
+			stateList[stateID].incorrectUnlock();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EAw3OEeaRU9xxExDVUg" name="withdraw" specification="_xNmiAg3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].withdraw();
-		return;
+            <body>if (stateID==Constants.READY)
+		{
+			System.out.println(&quot;Ready-->CheckBalance&quot;);
+			stateList[stateID].withdraw();
+			stateID=Constants.CHECKBALANCE;
+		}
+		else if (stateID==Constants.OVERDRAWN)
+		{
+			System.out.println(&quot;Overdrawn-->CheckBalance&quot;);
+			stateList[stateID].withdraw();
+			stateID=Constants.OVERDRAWN;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EBA3OEeaRU9xxExDVUg" name="belowMinBalancePenalty" specification="_xNmiAw3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].belowMinBalancePenalty();
-		return;
+            <body>if (stateID==Constants.CHECKBALANCE)
+		{
+			System.out.println(&quot;CheckBalance-->Overdrawn&quot;);
+			stateList[stateID].belowMinBalancePenalty();
+			stateID=Constants.OVERDRAWN;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EBQ3OEeaRU9xxExDVUg" name="suspend" specification="_xNmiBA3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].suspend();
-		return;
+            <body>if (stateID==Constants.READY)
+		{
+			System.out.println(&quot;Ready-->Suspend&quot;);
+			stateList[stateID].suspend();
+			stateID=Constants.SUSPENDED;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EBg3OEeaRU9xxExDVUg" name="activate" specification="_xNnJEA3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].activate();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6EBw3OEeaRU9xxExDVUg" name="noFunds" specification="_xNnJEQ3OEeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if (stateID==Constants.SUSPENDED)
+		{
+			System.out.println(&quot;Suspend-->Ready&quot;);
+			stateList[stateID].activate();
+			stateID=Constants.READY;
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xN6rEA3OEeaRU9xxExDVUg" name="close" specification="_xNnJEg3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>stateList[stateID].close();
-		return;
+            <body>if (stateID==Constants.SUSPENDED)
+		{
+			System.out.println(&quot;Suspend-->Close&quot;);
+			stateList[stateID].close();
+			System.exit(0);
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_BpmgIA4sEeaRU9xxExDVUg" name="getID" specification="_BphnoA4sEeaRU9xxExDVUg">
@@ -227,6 +280,82 @@
             <body>this.stateID = ID;
 	</body>
           </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_I9ZS0A9pEeaRU9xxExDVUg" name="incorrectLock" specification="_I9WPgA9pEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.READY||stateID==Constants.OVERDRAWN)
+			stateList[stateID].incorrectLock();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hLcLMA9pEeaRU9xxExDVUg" name="correctUnlock" specification="_hLZu8A9pEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.LOCKED)
+		{
+			System.out.println(&quot;Locked-->Checkbalance&quot;);
+			stateList[stateID].correctUnlock();
+			stateID=Constants.CHECKBALANCE;
+		}
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_GnZH8A9tEeaRU9xxExDVUg" name="open" specification="_xNks0A3OEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.START)
+		{
+			System.out.println(&quot;Start-->Idle&quot;);
+			stateList[stateID].open();
+			stateID=Constants.IDLE;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j4ZVIA9zEeaRU9xxExDVUg" name="correctLogin" specification="_xNks0Q3OEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.IDLE)
+		{
+			System.out.println(&quot;Idle-->Checkpin&quot;);
+			stateList[stateID].correctLogin();
+			stateID=Constants.CHECKPIN;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_v2NDkA92EeaRU9xxExDVUg" name="incorrectLogin" specification="_xNks0g3OEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.IDLE)
+		{
+			System.out.println(&quot;Idle-->Idle&quot;);
+			stateList[stateID].incorrectLogin();
+			stateID=Constants.IDLE;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gqmKIA94EeaRU9xxExDVUg" name="correctPINAboveMinBalance" specification="_xNks0w3OEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.CHECKPIN)
+		{
+			System.out.println(&quot;Checkpin-->Ready&quot;);
+			stateList[stateID].correctPINAboveMinBalance();
+			stateID=Constants.READY;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eqoLkA96EeaRU9xxExDVUg" name="correctPINBelowMinBalance" specification="_xNlT4A3OEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.CHECKPIN)
+		{
+			System.out.println(&quot;Checkpin-->Overdrawn&quot;);
+			stateList[stateID].correctPINBelowMinBalance();
+			stateID=Constants.OVERDRAWN;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_5CvqoA-BEeaRU9xxExDVUg" name="logout" specification="_xNlT4w3OEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if(stateID==Constants.CHECKPIN||stateID==Constants.READY||stateID==Constants.OVERDRAWN)
+		{
+			stateList[stateID].logout();
+			stateID=Constants.IDLE;
+		}
+	</body>
+          </ownedBehavior>
           <ownedOperation xmi:id="_xNkFwA3OEeaRU9xxExDVUg" name="MDA_EFSM" method="_xN414A3OEeaRU9xxExDVUg">
             <eAnnotations xmi:id="_xNkFwQ3OEeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_xNkFwg3OEeaRU9xxExDVUg" key="create"/>
@@ -234,17 +363,17 @@
             <ownedParameter xmi:id="_xNkFww3OEeaRU9xxExDVUg" type="_xNiQkA3OEeaRU9xxExDVUg" direction="return"/>
             <ownedParameter xmi:id="_568WAA8VEeaRU9xxExDVUg" name="data" type="_3iyicA3OEeaRU9xxExDVUg"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_xNks0A3OEeaRU9xxExDVUg" name="open" method="_xN414g3OEeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_xNks0Q3OEeaRU9xxExDVUg" name="correctLogin" method="_xN414w3OEeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_xNks0g3OEeaRU9xxExDVUg" name="incorrectLogin" method="_xN415A3OEeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_xNks0w3OEeaRU9xxExDVUg" name="correctPINAboveMinBalance" method="_xN415Q3OEeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_xNlT4A3OEeaRU9xxExDVUg" name="correctPINBelowMinBalance" method="_xN5c8A3OEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_xNks0A3OEeaRU9xxExDVUg" name="open" method="_GnZH8A9tEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_xNks0Q3OEeaRU9xxExDVUg" name="correctLogin" method="_j4ZVIA9zEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_xNks0g3OEeaRU9xxExDVUg" name="incorrectLogin" method="_v2NDkA92EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_xNks0w3OEeaRU9xxExDVUg" name="correctPINAboveMinBalance" method="_gqmKIA94EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_xNlT4A3OEeaRU9xxExDVUg" name="correctPINBelowMinBalance" method="_eqoLkA96EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNlT4Q3OEeaRU9xxExDVUg" name="incorrectPIN" method="_xN5c8Q3OEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_xNlT4g3OEeaRU9xxExDVUg" name="max">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_xNlT4w3OEeaRU9xxExDVUg" name="logout" method="_xN5c8w3OEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_xNlT4w3OEeaRU9xxExDVUg" name="logout" method="_5CvqoA-BEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNl68A3OEeaRU9xxExDVUg" name="balance" method="_xN5c9A3OEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNl68Q3OEeaRU9xxExDVUg" name="deposit" method="_xN5c9Q3OEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNl68g3OEeaRU9xxExDVUg" name="aboveMinBalance" method="_xN5c9g3OEeaRU9xxExDVUg"/>
@@ -255,7 +384,6 @@
           <ownedOperation xmi:id="_xNmiAw3OEeaRU9xxExDVUg" name="belowMinBalancePenalty" method="_xN6EBA3OEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNmiBA3OEeaRU9xxExDVUg" name="suspend" method="_xN6EBQ3OEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNnJEA3OEeaRU9xxExDVUg" name="activate" method="_xN6EBg3OEeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_xNnJEQ3OEeaRU9xxExDVUg" name="noFunds" method="_xN6EBw3OEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_xNnJEg3OEeaRU9xxExDVUg" name="close" method="_xN6rEA3OEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_BphnoA4sEeaRU9xxExDVUg" name="getID" method="_BpmgIA4sEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_Bpkq8A4sEeaRU9xxExDVUg" direction="return">
@@ -267,30 +395,81 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_snsNMA3WEeaRU9xxExDVUg" name="" memberEnd="_snsNMQ3WEeaRU9xxExDVUg _xN1ykA3OEeaRU9xxExDVUg">
-          <ownedEnd xmi:id="_snsNMQ3WEeaRU9xxExDVUg" name="" type="_xNiQkA3OEeaRU9xxExDVUg" association="_snsNMA3WEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_I9WPgA9pEeaRU9xxExDVUg" name="incorrectLock" method="_I9ZS0A9pEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_hLZu8A9pEeaRU9xxExDVUg" name="correctUnlock" method="_hLcLMA9pEeaRU9xxExDVUg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_snsNMw3WEeaRU9xxExDVUg" name="" memberEnd="_snsNNA3WEeaRU9xxExDVUg _xN2ZoQ3OEeaRU9xxExDVUg">
           <ownedEnd xmi:id="_snsNNA3WEeaRU9xxExDVUg" name="" type="_xNiQkA3OEeaRU9xxExDVUg" association="_snsNMw3WEeaRU9xxExDVUg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_vSNcwA8VEeaRU9xxExDVUg" name="DataStore"/>
-        <packagedElement xmi:type="uml:Association" xmi:id="_vSRHIA8VEeaRU9xxExDVUg" name="" memberEnd="_vSRHIQ8VEeaRU9xxExDVUg _vSOq4A8VEeaRU9xxExDVUg">
-          <ownedEnd xmi:id="_vSRHIQ8VEeaRU9xxExDVUg" name="" type="_xNiQkA3OEeaRU9xxExDVUg" association="_vSRHIA8VEeaRU9xxExDVUg"/>
-        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_3ix7Yg3OEeaRU9xxExDVUg" name="datastore">
-        <packagedElement xmi:type="uml:Class" xmi:id="_3iyicA3OEeaRU9xxExDVUg" name="DataStore">
+        <packagedElement xmi:type="uml:Class" xmi:id="_3iyicA3OEeaRU9xxExDVUg" name="DataStore" isAbstract="true">
           <eAnnotations xmi:id="_snVn4A3WEeaRU9xxExDVUg" source="http://ns.yatta.de/umllab">
             <contents xmi:type="ecore:EAnnotation" xmi:id="_snVn4Q3WEeaRU9xxExDVUg" source="codegen">
               <details xmi:id="_snVn4g3WEeaRU9xxExDVUg" key="codegenDirectory" value="/SSAProject/src"/>
             </contents>
           </eAnnotations>
-          <ownedOperation xmi:id="_3izJgA3OEeaRU9xxExDVUg" name="DataStore">
+          <ownedAttribute xmi:id="_uhYgUA9jEeaRU9xxExDVUg" name="accountID" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_uhZHYQ9jEeaRU9xxExDVUg" name="DataStore" specification="_3izJgA3OEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_uhZHYg9jEeaRU9xxExDVUg" type="_3iyicA3OEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_uhZHYw9jEeaRU9xxExDVUg" name="accountID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.accountID=accountID;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1bcvcQ9jEeaRU9xxExDVUg" name="getAccountID" specification="_1bcIYA9jEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_1bcvcg9jEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return accountID;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1bcvcw9jEeaRU9xxExDVUg" name="setAccountID" specification="_1bcIYg9jEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_1bcvdA9jEeaRU9xxExDVUg" name="accountID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.accountID = accountID;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_3izJgA3OEeaRU9xxExDVUg" name="DataStore" method="_uhZHYQ9jEeaRU9xxExDVUg">
             <eAnnotations xmi:id="_3izJgQ3OEeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_3izJgg3OEeaRU9xxExDVUg" key="create"/>
             </eAnnotations>
             <ownedParameter xmi:id="_3izwkA3OEeaRU9xxExDVUg" type="_3iyicA3OEeaRU9xxExDVUg" direction="return"/>
+            <ownedParameter xmi:id="_uhXSMA9jEeaRU9xxExDVUg" name="accountID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_1bcIYA9jEeaRU9xxExDVUg" name="getAccountID" method="_1bcvcQ9jEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_1bcIYQ9jEeaRU9xxExDVUg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_1bcIYg9jEeaRU9xxExDVUg" name="setAccountID" method="_1bcvcw9jEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_1bcvcA9jEeaRU9xxExDVUg" name="accountID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_GSg7wA97EeaRU9xxExDVUg" name="getAttempts" isAbstract="true">
+            <ownedParameter xmi:id="_GSiJ4A97EeaRU9xxExDVUg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_KqhPEA-BEeaRU9xxExDVUg" name="setAttempts" isAbstract="true">
+            <ownedParameter xmi:id="_Kqh2IA-BEeaRU9xxExDVUg" direction="return"/>
+            <ownedParameter xmi:id="_Mspe4A-BEeaRU9xxExDVUg" name="attempts">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_32Ob0A3OEeaRU9xxExDVUg" name="DataStore1">
@@ -300,49 +479,116 @@
             </contents>
           </eAnnotations>
           <generalization xmi:id="_32VJgA3OEeaRU9xxExDVUg" general="_3iyicA3OEeaRU9xxExDVUg"/>
-          <ownedAttribute xmi:id="_32WXoA3OEeaRU9xxExDVUg" name="pin">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <ownedAttribute xmi:id="_32WXoA3OEeaRU9xxExDVUg" name="pin" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_32W-sA3OEeaRU9xxExDVUg" name="uID" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_32XlwQ3OEeaRU9xxExDVUg" name="balance" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_shTkIA9REeaRU9xxExDVUg" name="attempts" visibility="public">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_32XlwQ3OEeaRU9xxExDVUg" name="balance">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <ownedAttribute xmi:id="_fyQHgA9lEeaRU9xxExDVUg" name="tempPIN" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_shTkIA9REeaRU9xxExDVUg" name="attempts">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <ownedAttribute xmi:id="_fyQHgg9lEeaRU9xxExDVUg" name="tempDeposit" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
           </ownedAttribute>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_32YM0A3OEeaRU9xxExDVUg" name="getuID" specification="_32QRAA3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_32YM0Q3OEeaRU9xxExDVUg" direction="return">
+          <ownedAttribute xmi:id="_fyQukA9lEeaRU9xxExDVUg" name="tempWithdraw" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_r1k10A9tEeaRU9xxExDVUg" name="tempBalance" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_KcwagA9uEeaRU9xxExDVUg" name="tempUID" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_DhLiIA-zEeaRU9xxExDVUg" name="belowMinFlag" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_DhMJMA-zEeaRU9xxExDVUg" value="false"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xUhWUA9jEeaRU9xxExDVUg" name="DataStore1" specification="_32PC4A3OEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_xUhWUQ9jEeaRU9xxExDVUg" type="_32Ob0A3OEeaRU9xxExDVUg" direction="return">
               <name xsi:nil="true"/>
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>super(1);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_it-uQA9kEeaRU9xxExDVUg" name="getuID" specification="_it9gIA9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_it-uQQ9kEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <language>java</language>
             <body>return uID;
 	</body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_32YM0g3OEeaRU9xxExDVUg" name="setuID" specification="_32Q4EA3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_32YM0w3OEeaRU9xxExDVUg" name="uID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_it-uQg9kEeaRU9xxExDVUg" name="setuID" specification="_it-HMQ9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_it-uQw9kEeaRU9xxExDVUg" name="uID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <language>java</language>
             <body>this.uID = uID;
 	</body>
           </ownedBehavior>
-          <ownedOperation xmi:id="_32PC4A3OEeaRU9xxExDVUg" name="DataStore1">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s4Fx0A9kEeaRU9xxExDVUg" name="getAccountID" specification="_s4EjsA9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_s4Fx0Q9kEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return accountID;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MILNIA-zEeaRU9xxExDVUg" name="isBelowMinFlag" specification="_MIFtkA-zEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_MILNIQ-zEeaRU9xxExDVUg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return belowMinFlag;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MIL0MA-zEeaRU9xxExDVUg" name="setBelowMinFlag" specification="_MIIJ0A-zEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_MIL0MQ-zEeaRU9xxExDVUg" name="belowMinFlag">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.belowMinFlag = belowMinFlag;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_32PC4A3OEeaRU9xxExDVUg" name="DataStore1" method="_xUhWUA9jEeaRU9xxExDVUg">
             <eAnnotations xmi:id="_32PC4Q3OEeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_32PC4g3OEeaRU9xxExDVUg" key="create"/>
             </eAnnotations>
             <ownedParameter xmi:id="_32Pp8Q3OEeaRU9xxExDVUg" type="_32Ob0A3OEeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_32QRAA3OEeaRU9xxExDVUg" name="getuID" method="_32YM0A3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_32QRAQ3OEeaRU9xxExDVUg" direction="return">
+          <ownedOperation xmi:id="_it9gIA9kEeaRU9xxExDVUg" name="getuID" method="_it-uQA9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_it-HMA9kEeaRU9xxExDVUg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_it-HMQ9kEeaRU9xxExDVUg" name="setuID" method="_it-uQg9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_it-HMg9kEeaRU9xxExDVUg" name="uID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s4EjsA9kEeaRU9xxExDVUg" name="getAccountID" method="_s4Fx0A9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_s4FKwA9kEeaRU9xxExDVUg" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_32Q4EA3OEeaRU9xxExDVUg" name="setuID" method="_32YM0g3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_32Q4EQ3OEeaRU9xxExDVUg" name="uID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <ownedOperation xmi:id="_MIFtkA-zEeaRU9xxExDVUg" name="isBelowMinFlag" method="_MILNIA-zEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_MIHiwA-zEeaRU9xxExDVUg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_MIIJ0A-zEeaRU9xxExDVUg" name="setBelowMinFlag" method="_MIL0MA-zEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_MIIJ0Q-zEeaRU9xxExDVUg" name="belowMinFlag">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
@@ -353,373 +599,71 @@
             </contents>
           </eAnnotations>
           <generalization xmi:id="_4JDRMA3OEeaRU9xxExDVUg" general="_3iyicA3OEeaRU9xxExDVUg"/>
-          <ownedAttribute xmi:id="_4JFGYA3OEeaRU9xxExDVUg" name="pin">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <ownedAttribute xmi:id="_4JFGYA3OEeaRU9xxExDVUg" name="pin" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_4JFGYQ3OEeaRU9xxExDVUg" name="uID" visibility="private">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_4JFtcQ3OEeaRU9xxExDVUg" name="balance">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          <ownedAttribute xmi:id="_4JFtcQ3OEeaRU9xxExDVUg" name="balance" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedAttribute>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4JGUgA3OEeaRU9xxExDVUg" name="getuID" specification="_4I6uUA3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_4JGUgQ3OEeaRU9xxExDVUg" direction="return">
+          <ownedAttribute xmi:id="_StBUoA97EeaRU9xxExDVUg" name="attempts" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_StBUog97EeaRU9xxExDVUg" name="tempUID" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_StB7sQ97EeaRU9xxExDVUg" name="tempBalance" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_StB7sw97EeaRU9xxExDVUg" name="tempPIN" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_StCiwQ97EeaRU9xxExDVUg" name="tempDeposit" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_StCiww97EeaRU9xxExDVUg" name="tempWithdraw" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_zLDaIA9jEeaRU9xxExDVUg" name="DataStore2" specification="_4I45IA3OEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_zLDaIQ9jEeaRU9xxExDVUg" type="_4I3rAA3OEeaRU9xxExDVUg" direction="return">
               <name xsi:nil="true"/>
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>super(2);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dYdbEA9kEeaRU9xxExDVUg" name="getuID" specification="_dYcM8A9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_dYdbEQ9kEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
             <body>return uID;
 	</body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4JG7kA3OEeaRU9xxExDVUg" name="setuID" specification="_4I7VYA3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_4JG7kQ3OEeaRU9xxExDVUg" name="uID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dYdbEg9kEeaRU9xxExDVUg" name="setuID" specification="_dYc0AQ9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_dYdbEw9kEeaRU9xxExDVUg" name="uID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
             <body>this.uID = uID;
 	</body>
           </ownedBehavior>
-          <ownedOperation xmi:id="_4I45IA3OEeaRU9xxExDVUg" name="DataStore2">
+          <ownedOperation xmi:id="_4I45IA3OEeaRU9xxExDVUg" name="DataStore2" method="_zLDaIA9jEeaRU9xxExDVUg">
             <eAnnotations xmi:id="_4I45IQ3OEeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_4I45Ig3OEeaRU9xxExDVUg" key="create"/>
             </eAnnotations>
             <ownedParameter xmi:id="_4I5gMQ3OEeaRU9xxExDVUg" type="_4I3rAA3OEeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_4I6uUA3OEeaRU9xxExDVUg" name="getuID" method="_4JGUgA3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_4I6uUQ3OEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_4I7VYA3OEeaRU9xxExDVUg" name="setuID" method="_4JG7kA3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_4I7VYQ3OEeaRU9xxExDVUg" name="uID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_PbK3QA9YEeaRU9xxExDVUg" name="TempDataStore">
-          <eAnnotations xmi:id="_PbK3QQ9YEeaRU9xxExDVUg" source="http://ns.yatta.de/umllab">
-            <contents xmi:type="ecore:EAnnotation" xmi:id="_PbK3Qg9YEeaRU9xxExDVUg" source="codegen">
-              <details xmi:id="_PbK3Qw9YEeaRU9xxExDVUg" key="codegenDirectory" value="/SSAProject/src"/>
-            </contents>
-          </eAnnotations>
-          <generalization xmi:id="_PbMFYA9YEeaRU9xxExDVUg" general="_3iyicA3OEeaRU9xxExDVUg"/>
-          <ownedAttribute xmi:id="_7li7MA9YEeaRU9xxExDVUg" name="tempIntBalance" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7ljiQQ9YEeaRU9xxExDVUg" name="tempIntPIN" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7ljiQw9YEeaRU9xxExDVUg" name="tempIntUID" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7lkJUQ9YEeaRU9xxExDVUg" name="tempIntWithdraw" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7lkJUw9YEeaRU9xxExDVUg" name="tempFloatBalance" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7lkwYA9YEeaRU9xxExDVUg" name="tempStringPIN" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7lkwYg9YEeaRU9xxExDVUg" name="tempStringUID" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_7lkwZA9YEeaRU9xxExDVUg" name="tempFloatWithdraw" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_AwKl8A9ZEeaRU9xxExDVUg" name="tempIntdeposit" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_AwLNAQ9ZEeaRU9xxExDVUg" name="tempFloatdeposit" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_InJwUA9ZEeaRU9xxExDVUg" name="accountID" visibility="package" isStatic="true">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_InJwUQ9ZEeaRU9xxExDVUg" value="0"/>
-          </ownedAttribute>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Qvl3EA9ZEeaRU9xxExDVUg" name="getTempIntBalance" specification="_QveiUA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvl3EQ9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempIntBalance;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Qvl3Eg9ZEeaRU9xxExDVUg" name="setTempIntBalance" specification="_QviMsQ9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvl3Ew9ZEeaRU9xxExDVUg" name="tempIntBalance">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempIntBalance = tempIntBalance;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Qvl3FA9ZEeaRU9xxExDVUg" name="getTempIntPIN" specification="_QveiUQ9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvl3FQ9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempIntPIN;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Qvl3Fg9ZEeaRU9xxExDVUg" name="setTempIntPIN" specification="_QvizwQ9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvl3Fw9ZEeaRU9xxExDVUg" name="tempIntPIN">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempIntPIN = tempIntPIN;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Qvl3GA9ZEeaRU9xxExDVUg" name="getTempIntUID" specification="_QveiUg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvl3GQ9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempIntUID;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeIA9ZEeaRU9xxExDVUg" name="setTempIntUID" specification="_Qvja0A9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeIQ9ZEeaRU9xxExDVUg" name="tempIntUID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempIntUID = tempIntUID;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeIg9ZEeaRU9xxExDVUg" name="getTempIntWithdraw" specification="_QvfJYA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeIw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempIntWithdraw;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeJA9ZEeaRU9xxExDVUg" name="setTempIntWithdraw" specification="_Qvja0w9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeJQ9ZEeaRU9xxExDVUg" name="tempIntWithdraw">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempIntWithdraw = tempIntWithdraw;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeJg9ZEeaRU9xxExDVUg" name="getTempIntdeposit" specification="_QvfJYQ9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeJw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempIntdeposit;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeKA9ZEeaRU9xxExDVUg" name="setTempIntdeposit" specification="_Qvja1g9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeKQ9ZEeaRU9xxExDVUg" name="tempIntdeposit">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempIntdeposit = tempIntdeposit;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeKg9ZEeaRU9xxExDVUg" name="getTempFloatBalance" specification="_QvfJYg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeKw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempFloatBalance;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeLA9ZEeaRU9xxExDVUg" name="setTempFloatBalance" specification="_QvkB4Q9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeLQ9ZEeaRU9xxExDVUg" name="tempFloatBalance">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempFloatBalance = tempFloatBalance;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvmeLg9ZEeaRU9xxExDVUg" name="getTempStringPIN" specification="_QvfJYw9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvmeLw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempStringPIN;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFMA9ZEeaRU9xxExDVUg" name="setTempStringPIN" specification="_QvkB5A9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFMQ9ZEeaRU9xxExDVUg" name="tempStringPIN">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempStringPIN = tempStringPIN;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFMg9ZEeaRU9xxExDVUg" name="getTempStringUID" specification="_QvfJZA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFMw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempStringUID;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFNA9ZEeaRU9xxExDVUg" name="setTempStringUID" specification="_Qvko8A9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFNQ9ZEeaRU9xxExDVUg" name="tempStringUID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempStringUID = tempStringUID;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFNg9ZEeaRU9xxExDVUg" name="getTempFloatWithdraw" specification="_QvfJZQ9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFNw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempFloatWithdraw;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFOA9ZEeaRU9xxExDVUg" name="setTempFloatWithdraw" specification="_Qvko8w9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFOQ9ZEeaRU9xxExDVUg" name="tempFloatWithdraw">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempFloatWithdraw = tempFloatWithdraw;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFOg9ZEeaRU9xxExDVUg" name="getTempFloatdeposit" specification="_QvfJZg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFOw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return tempFloatdeposit;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFPA9ZEeaRU9xxExDVUg" name="setTempFloatdeposit" specification="_Qvko9g9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFPQ9ZEeaRU9xxExDVUg" name="tempFloatdeposit">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.tempFloatdeposit = tempFloatdeposit;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFPg9ZEeaRU9xxExDVUg" name="getAccountID" specification="_QvfJZw9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFPw9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return accountID;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_QvnFQA9ZEeaRU9xxExDVUg" name="setAccountID" specification="_QvlQAQ9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvnFQQ9ZEeaRU9xxExDVUg" name="accountID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>TempDataStore.accountID = accountID;&#xD;
-	</body>
-          </ownedBehavior>
-          <ownedOperation xmi:id="_QveiUA9ZEeaRU9xxExDVUg" name="getTempIntBalance" isStatic="true" method="_Qvl3EA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QviMsA9ZEeaRU9xxExDVUg" direction="return">
+          <ownedOperation xmi:id="_dYcM8A9kEeaRU9xxExDVUg" name="getuID" method="_dYdbEA9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_dYc0AA9kEeaRU9xxExDVUg" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_QveiUQ9ZEeaRU9xxExDVUg" name="getTempIntPIN" isStatic="true" method="_Qvl3FA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvizwA9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QveiUg9ZEeaRU9xxExDVUg" name="getTempIntUID" isStatic="true" method="_Qvl3GA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvizww9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJYA9ZEeaRU9xxExDVUg" name="getTempIntWithdraw" isStatic="true" method="_QvmeIg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvja0g9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJYQ9ZEeaRU9xxExDVUg" name="getTempIntdeposit" isStatic="true" method="_QvmeJg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvja1Q9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJYg9ZEeaRU9xxExDVUg" name="getTempFloatBalance" isStatic="true" method="_QvmeKg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvkB4A9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJYw9ZEeaRU9xxExDVUg" name="getTempStringPIN" isStatic="true" method="_QvmeLg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvkB4w9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJZA9ZEeaRU9xxExDVUg" name="getTempStringUID" isStatic="true" method="_QvnFMg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvkB5g9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJZQ9ZEeaRU9xxExDVUg" name="getTempFloatWithdraw" isStatic="true" method="_QvnFNg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvko8g9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJZg9ZEeaRU9xxExDVUg" name="getTempFloatdeposit" isStatic="true" method="_QvnFOg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvko9Q9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvfJZw9ZEeaRU9xxExDVUg" name="getAccountID" isStatic="true" method="_QvnFPg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvlQAA9ZEeaRU9xxExDVUg" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QviMsQ9ZEeaRU9xxExDVUg" name="setTempIntBalance" isStatic="true" method="_Qvl3Eg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QviMsg9ZEeaRU9xxExDVUg" name="tempIntBalance">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvizwQ9ZEeaRU9xxExDVUg" name="setTempIntPIN" isStatic="true" method="_Qvl3Fg9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvizwg9ZEeaRU9xxExDVUg" name="tempIntPIN">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Qvja0A9ZEeaRU9xxExDVUg" name="setTempIntUID" isStatic="true" method="_QvmeIA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvja0Q9ZEeaRU9xxExDVUg" name="tempIntUID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Qvja0w9ZEeaRU9xxExDVUg" name="setTempIntWithdraw" isStatic="true" method="_QvmeJA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvja1A9ZEeaRU9xxExDVUg" name="tempIntWithdraw">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Qvja1g9ZEeaRU9xxExDVUg" name="setTempIntdeposit" isStatic="true" method="_QvmeKA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvja1w9ZEeaRU9xxExDVUg" name="tempIntdeposit">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvkB4Q9ZEeaRU9xxExDVUg" name="setTempFloatBalance" isStatic="true" method="_QvmeLA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvkB4g9ZEeaRU9xxExDVUg" name="tempFloatBalance">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvkB5A9ZEeaRU9xxExDVUg" name="setTempStringPIN" isStatic="true" method="_QvnFMA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvkB5Q9ZEeaRU9xxExDVUg" name="tempStringPIN">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Qvko8A9ZEeaRU9xxExDVUg" name="setTempStringUID" isStatic="true" method="_QvnFNA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvko8Q9ZEeaRU9xxExDVUg" name="tempStringUID">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Qvko8w9ZEeaRU9xxExDVUg" name="setTempFloatWithdraw" isStatic="true" method="_QvnFOA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvko9A9ZEeaRU9xxExDVUg" name="tempFloatWithdraw">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Qvko9g9ZEeaRU9xxExDVUg" name="setTempFloatdeposit" isStatic="true" method="_QvnFPA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_Qvko9w9ZEeaRU9xxExDVUg" name="tempFloatdeposit">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_QvlQAQ9ZEeaRU9xxExDVUg" name="setAccountID" isStatic="true" method="_QvnFQA9ZEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_QvlQAg9ZEeaRU9xxExDVUg" name="accountID">
+          <ownedOperation xmi:id="_dYc0AQ9kEeaRU9xxExDVUg" name="setuID" method="_dYdbEg9kEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_dYc0Ag9kEeaRU9xxExDVUg" name="uID">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
@@ -740,7 +684,6 @@
           </ownedComment>
           <ownedAttribute xmi:id="_9A37wA3OEeaRU9xxExDVUg" name="model" visibility="private" type="_xNiQkA3OEeaRU9xxExDVUg" association="_snpw8Q3WEeaRU9xxExDVUg"/>
           <ownedAttribute xmi:id="_9A4i0Q3OEeaRU9xxExDVUg" name="data1" visibility="private" type="_3iyicA3OEeaRU9xxExDVUg" association="_snpJ4Q3WEeaRU9xxExDVUg"/>
-          <ownedAttribute xmi:id="_k6nQ0A9XEeaRU9xxExDVUg" name="af1" visibility="private" type="_y3ZUwA9XEeaRU9xxExDVUg" association="_k6pGAA9XEeaRU9xxExDVUg"/>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A5w8A3OEeaRU9xxExDVUg" name="Account1" specification="_9AaBsA3OEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_9A5w8Q3OEeaRU9xxExDVUg" type="_9AXlcA3OEeaRU9xxExDVUg" direction="return">
               <name xsi:nil="true"/>
@@ -749,7 +692,6 @@
             <body>// TODO initialize model and objects
 		this.data1=new DataStore1();
 		this.model=new MDA_EFSM(data1);
-		this.af1=new AccountFactory1(data1);
 		
 		
 	</body>
@@ -846,22 +788,21 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
             </ownedParameter>
             <language>java</language>
-            <body>model.open();
+            <body>DataStore1 temp=(DataStore1)data1;
+		temp.setTempBalance(a);
+		temp.setTempPIN(p);
+		temp.setTempUID(y);
+		model.open();
+		
+		System.out.println(&quot;Account Initialized bal=&quot;+temp.getBalance()+&quot; pin=&quot;+temp.getPin()+&quot; uid=&quot;+temp.getuID());
 		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A6YAA3OEeaRU9xxExDVUg" name="balance" specification="_9Acd8A3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
+            <body>DataStore1 temp=(DataStore1)data1;
+		model.balance();
 		return ;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A6YAQ3OEeaRU9xxExDVUg" name="pin" specification="_9Acd8Q3OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_9A6YAg3OEeaRU9xxExDVUg" name="x">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A6YAw3OEeaRU9xxExDVUg" name="deposit" specification="_9AdFAA3OEeaRU9xxExDVUg">
@@ -869,8 +810,13 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return ;
+            <body>DataStore1 temp=(DataStore1)data1;
+		temp.setTempDeposit(d);
+		model.deposit();
+		if(temp.getBalance()>500)
+			model.aboveMinBalance();
+		else
+			model.belowMinBalance();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A6YBQ3OEeaRU9xxExDVUg" name="withdraw" specification="_9AdsEA3OEeaRU9xxExDVUg">
@@ -878,8 +824,19 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return ;
+            <body>DataStore1 temp=(DataStore1)data1;
+		temp.setTempWithdraw(w);
+		float bal=temp.getBalance();
+		if(bal-w>=500)
+		{
+			model.withdraw();
+			model.aboveMinBalance();
+		}
+		else
+		{
+			model.withdraw();
+			model.belowMinBalancePenalty();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A6YBw3OEeaRU9xxExDVUg" name="login" specification="_9AeTIA3OEeaRU9xxExDVUg">
@@ -887,13 +844,17 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
+            <body>DataStore1 temp=(DataStore1)data1;
+		if(temp.getuID().equals(y))
+			model.correctLogin();
+		else
+			model.incorrectLogin();
 		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9A6_EA3OEeaRU9xxExDVUg" name="logout" specification="_9Ae6MA3OEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
+            <body>model.logout();
 		return ;
 	</body>
           </ownedBehavior>
@@ -902,7 +863,11 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
+            <body>DataStore1 temp=(DataStore1)data1;
+		if(temp.getPin().equals(x))
+			model.correctLock();
+		else
+			model.incorrectLock();
 		return ;
 	</body>
           </ownedBehavior>
@@ -911,8 +876,39 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
+            <body>DataStore1 temp=(DataStore1)data1;
+		if(temp.getPin().equals(x))
+		{
+			model.correctUnlock();
+			if(temp.getBalance()>500)
+				model.aboveMinBalance();
+			else
+				model.belowMinBalance();
+		}
+		else
+			model.incorrectUnlock();
 		return ;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C39wMA9qEeaRU9xxExDVUg" name="pin" specification="_9Acd8Q3OEeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_C39wMQ9qEeaRU9xxExDVUg" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>DataStore1 temp=(DataStore1)data1;
+		if(temp.getPin().equals(x))
+		{	
+			if(temp.getBalance()>500){
+				model.correctPINAboveMinBalance();
+			}
+			else
+				model.correctPINBelowMinBalance();
+		}
+		else
+		{
+			model.incorrectPIN(Constants.ACCOUNT1_MAXATTEMPT);
+		}
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_9AaBsA3OEeaRU9xxExDVUg" name="Account1" method="_9A5w8A3OEeaRU9xxExDVUg">
@@ -937,7 +933,7 @@
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_9Acd8A3OEeaRU9xxExDVUg" name="balance" method="_9A6YAA3OEeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_9Acd8Q3OEeaRU9xxExDVUg" name="pin" method="_9A6YAQ3OEeaRU9xxExDVUg">
+          <ownedOperation xmi:id="_9Acd8Q3OEeaRU9xxExDVUg" name="pin" method="_C39wMA9qEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_9Acd8g3OEeaRU9xxExDVUg" name="x">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
@@ -1115,9 +1111,6 @@
         <packagedElement xmi:type="uml:Association" xmi:id="_snxFtA3WEeaRU9xxExDVUg" name="" memberEnd="_snxFtQ3WEeaRU9xxExDVUg _9ZTC0A3OEeaRU9xxExDVUg">
           <ownedEnd xmi:id="_snxFtQ3WEeaRU9xxExDVUg" name="" type="_9ZEZUA3OEeaRU9xxExDVUg" association="_snxFtA3WEeaRU9xxExDVUg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_k6pGAA9XEeaRU9xxExDVUg" name="" memberEnd="_k6pGAQ9XEeaRU9xxExDVUg _k6nQ0A9XEeaRU9xxExDVUg">
-          <ownedEnd xmi:id="_k6pGAQ9XEeaRU9xxExDVUg" name="" type="_9AXlcA3OEeaRU9xxExDVUg" association="_k6pGAA9XEeaRU9xxExDVUg"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_oDBzQA9XEeaRU9xxExDVUg" name="AccountFactory1"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Cz2nAA3PEeaRU9xxExDVUg" name="outputProcessor">
@@ -1140,90 +1133,147 @@
           <ownedAttribute xmi:id="_C0lm1A3PEeaRU9xxExDVUg" name="penalty" visibility="private" type="_C0fgMA3PEeaRU9xxExDVUg" association="_snweoQ3WEeaRU9xxExDVUg"/>
           <ownedAttribute xmi:id="_C0mN4Q3PEeaRU9xxExDVUg" name="incorrectLock" visibility="private" type="_C0fgMg3PEeaRU9xxExDVUg" association="_snrmIQ3WEeaRU9xxExDVUg"/>
           <ownedAttribute xmi:id="_C0m08A3PEeaRU9xxExDVUg" name="incorrectUnlock" visibility="private" type="_C0guUA3PEeaRU9xxExDVUg" association="_snv3kQ3WEeaRU9xxExDVUg"/>
+          <ownedAttribute xmi:id="_J9JQ4A9vEeaRU9xxExDVUg" name="af" visibility="private" type="_J9HbsA9vEeaRU9xxExDVUg" association="_J9LGEA9vEeaRU9xxExDVUg"/>
+          <ownedAttribute xmi:id="_CEcLcA_AEeaRU9xxExDVUg" name="data" visibility="public" type="_3iyicA3OEeaRU9xxExDVUg" association="_CEkHQA_AEeaRU9xxExDVUg"/>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0ncAA3PEeaRU9xxExDVUg" name="initiateAccount" specification="_C0DbUA3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			initiateAccount=af.getInitiateAccount(data);
+			initiateAccount.initiateAccount();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0ncAQ3PEeaRU9xxExDVUg" name="diplayIncorrectIDMsg" specification="_C0ECYA3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			incorrectID=af.getIncorrectID(data);
+			incorrectID.diplayIncorrectIDMsg();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0ncAg3PEeaRU9xxExDVUg" name="displayPINPrompt" specification="_C0ECYQ3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			pinPrompt=af.getPINPrompt(data);
+			pinPrompt.displayPINPrompt();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDEA3PEeaRU9xxExDVUg" name="displayIncorrectPINMsg" specification="_C0EpcA3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			incorrectPIN=af.getIncorrectPIN(data);
+			incorrectPIN.displayIncorrectPINMsg();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDEQ3PEeaRU9xxExDVUg" name="displayTooManyAttemptsMsg" specification="_C0EpcQ3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			tooManyAttempts=af.getTooManyAttempts(data);
+			tooManyAttempts.displayTooManyAttemptsMsg();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDEg3PEeaRU9xxExDVUg" name="displayMenu" specification="_C0Epcg3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			menu=af.getMenu(data);
+			menu.displayMenu();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDEw3PEeaRU9xxExDVUg" name="makeDeposit" specification="_C0FQgA3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			deposit=af.getDeposit(data);
+			deposit.makeDeposit();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDFA3PEeaRU9xxExDVUg" name="displayBalance" specification="_C0FQgQ3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			balance=af.getBalance(data);
+			balance.displayBalance();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDFQ3PEeaRU9xxExDVUg" name="makeWithdraw" specification="_C0FQgg3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			withdraw=af.getWithdraw(data);
+			withdraw.makeWithdraw();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDFg3PEeaRU9xxExDVUg" name="displayMinBalanceMsg" specification="_C0F3kA3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			minBalance=af.getMinBalance(data);
+			minBalance.displayMinBalanceMsg();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oDFw3PEeaRU9xxExDVUg" name="applyPenalty" specification="_C0F3kQ3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			penalty=af.getPenalty(data);
+			penalty.applyPenalty();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oqIA3PEeaRU9xxExDVUg" name="incorrectLockMsg" specification="_C0F3kg3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			incorrectLock=af.getIncorrectLock(data);
+			incorrectLock.incorrectLockMsg();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_C0oqIQ3PEeaRU9xxExDVUg" name="incorrectUnlockMsg" specification="_C0GeoA3PEeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>if(data.getAccountID()==1)
+		{
+			af=new AccountFactory1();
+			incorrectUnlock=af.getIncorrectUnlock(data);
+			incorrectUnlock.incorrectUnlockMsg();
+		}
 	</body>
           </ownedBehavior>
-          <ownedOperation xmi:id="_C0BmIA3PEeaRU9xxExDVUg" name="OutputProcessor">
-            <eAnnotations xmi:id="_C0BmIQ3PEeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-              <details xmi:id="_C0BmIg3PEeaRU9xxExDVUg" key="create"/>
-            </eAnnotations>
-            <ownedParameter xmi:id="_C0C0QA3PEeaRU9xxExDVUg" type="_C0A_EA3PEeaRU9xxExDVUg" direction="return"/>
-          </ownedOperation>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="___a_sA-_EeaRU9xxExDVUg" name="OutputProcessor" specification="___Sc0A-_EeaRU9xxExDVUg">
+            <ownedParameter xmi:id="___a_sQ-_EeaRU9xxExDVUg" name="data" type="_3iyicA3OEeaRU9xxExDVUg"/>
+            <ownedParameter xmi:id="___a_sg-_EeaRU9xxExDVUg" type="_C0A_EA3PEeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.data=data;
+	</body>
+          </ownedBehavior>
           <ownedOperation xmi:id="_C0DbUA3PEeaRU9xxExDVUg" name="initiateAccount" method="_C0ncAA3PEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_C0ECYA3PEeaRU9xxExDVUg" name="diplayIncorrectIDMsg" method="_C0ncAQ3PEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_C0ECYQ3PEeaRU9xxExDVUg" name="displayPINPrompt" method="_C0ncAg3PEeaRU9xxExDVUg"/>
@@ -1237,6 +1287,13 @@
           <ownedOperation xmi:id="_C0F3kQ3PEeaRU9xxExDVUg" name="applyPenalty" method="_C0oDFw3PEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_C0F3kg3PEeaRU9xxExDVUg" name="incorrectLockMsg" method="_C0oqIA3PEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_C0GeoA3PEeaRU9xxExDVUg" name="incorrectUnlockMsg" method="_C0oqIQ3PEeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="___Sc0A-_EeaRU9xxExDVUg" name="OutputProcessor" method="___a_sA-_EeaRU9xxExDVUg">
+            <eAnnotations xmi:id="___Sc0w-_EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="___Sc1A-_EeaRU9xxExDVUg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="___Sc0Q-_EeaRU9xxExDVUg" name="data" type="_3iyicA3OEeaRU9xxExDVUg"/>
+            <ownedParameter xmi:id="___Sc0g-_EeaRU9xxExDVUg" type="_C0A_EA3PEeaRU9xxExDVUg" direction="return"/>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_C0ansA3PEeaRU9xxExDVUg" name="InitiateAccount"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_C0b10A3PEeaRU9xxExDVUg" name="IncorrectID"/>
@@ -1290,9 +1347,16 @@
         <packagedElement xmi:type="uml:Association" xmi:id="_snweoQ3WEeaRU9xxExDVUg" name="" memberEnd="_snweog3WEeaRU9xxExDVUg _C0lm1A3PEeaRU9xxExDVUg">
           <ownedEnd xmi:id="_snweog3WEeaRU9xxExDVUg" name="" type="_C0A_EA3PEeaRU9xxExDVUg" association="_snweoQ3WEeaRU9xxExDVUg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_J9LGEA9vEeaRU9xxExDVUg" name="" memberEnd="_J9LGEQ9vEeaRU9xxExDVUg _J9JQ4A9vEeaRU9xxExDVUg">
+          <ownedEnd xmi:id="_J9LGEQ9vEeaRU9xxExDVUg" name="" type="_C0A_EA3PEeaRU9xxExDVUg" association="_J9LGEA9vEeaRU9xxExDVUg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CEkHQA_AEeaRU9xxExDVUg" name="" memberEnd="_CEkHQQ_AEeaRU9xxExDVUg _CEcLcA_AEeaRU9xxExDVUg">
+          <ownedEnd xmi:id="_CEkHQQ_AEeaRU9xxExDVUg" name="" type="_C0A_EA3PEeaRU9xxExDVUg" association="_CEkHQA_AEeaRU9xxExDVUg"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_rXtQEA9XEeaRU9xxExDVUg" name="abstractFactory">
         <packagedElement xmi:type="uml:Class" xmi:id="_y3ZUwA9XEeaRU9xxExDVUg" name="AccountFactory1"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_J9HbsA9vEeaRU9xxExDVUg" name="AccountAbstractFactory"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_3ix7YA3OEeaRU9xxExDVUg" name="java">
@@ -1323,15 +1387,9 @@
     <languageName>java</languageName>
   </UMLLabProfile:TargetLanguage>
   <UMLLabProfile:Reference xmi:id="_xNxhIA3OEeaRU9xxExDVUg" base_Element="_xNw6EA3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:Reference xmi:id="_xN0kcA3OEeaRU9xxExDVUg" base_Element="_xNz9YA3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_xN2ZoA3OEeaRU9xxExDVUg" base_Element="_xN1ykA3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:Array xmi:id="_xN3AsA3OEeaRU9xxExDVUg" dimensions="1" base_Element="_xN2ZoQ3OEeaRU9xxExDVUg"/>
+  <UMLLabProfile:Array xmi:id="_xN3AsA3OEeaRU9xxExDVUg" dimensions="0" base_Element="_xN2ZoQ3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_xN3AsQ3OEeaRU9xxExDVUg" base_Element="_xN2ZoQ3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_xN3nwA3OEeaRU9xxExDVUg" base_Element="_xN3Asg3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_3izJgw3OEeaRU9xxExDVUg" base_Element="_3izJgA3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_32Pp8A3OEeaRU9xxExDVUg" base_Element="_32PC4A3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_32XlwA3OEeaRU9xxExDVUg" base_Element="_32W-sA3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_4I5gMA3OEeaRU9xxExDVUg" base_Element="_4I45IA3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_4JFtcA3OEeaRU9xxExDVUg" base_Element="_4JFGYQ3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_9A1fgA3OEeaRU9xxExDVUg" base_Element="_9A04cA3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_9A2GkA3OEeaRU9xxExDVUg" base_Element="_9A1fgQ3OEeaRU9xxExDVUg"/>
@@ -1340,7 +1398,6 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_9A5J4A3OEeaRU9xxExDVUg" base_Element="_9A4i0Q3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_9ZTp4A3OEeaRU9xxExDVUg" base_Element="_9ZTC0A3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_9ZTp4g3OEeaRU9xxExDVUg" base_Element="_9ZTp4Q3OEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_C0CNMA3PEeaRU9xxExDVUg" base_Element="_C0BmIA3PEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_C0bOwA3PEeaRU9xxExDVUg" base_Element="_C0ansA3PEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_C0b10Q3PEeaRU9xxExDVUg" base_Element="_C0b10A3PEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_C0cc4A3PEeaRU9xxExDVUg" base_Element="_C0b10g3PEeaRU9xxExDVUg"/>
@@ -1373,7 +1430,6 @@
   <UMLLabProfile:Reference xmi:id="_snq_EA3WEeaRU9xxExDVUg" base_Element="_snqYAQ3WEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_snrmIA3WEeaRU9xxExDVUg" base_Element="_snq_EQ3WEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_snrmIw3WEeaRU9xxExDVUg" base_Element="_snrmIQ3WEeaRU9xxExDVUg"/>
-  <UMLLabProfile:Reference xmi:id="_snsNMg3WEeaRU9xxExDVUg" base_Element="_snsNMA3WEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_sns0QA3WEeaRU9xxExDVUg" base_Element="_snsNMw3WEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_sntbUA3WEeaRU9xxExDVUg" base_Element="_sns0QQ3WEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_snuCYA3WEeaRU9xxExDVUg" base_Element="_sntbUQ3WEeaRU9xxExDVUg"/>
@@ -1388,22 +1444,16 @@
   <UMLLabProfile:Reference xmi:id="_snxswA3WEeaRU9xxExDVUg" base_Element="_snxFtA3WEeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_Bpjc0A4sEeaRU9xxExDVUg" base_Element="_xN3nwQ3OEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_vSOD0A8VEeaRU9xxExDVUg" base_Element="_vSNcwA8VEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_vSPR8A8VEeaRU9xxExDVUg" base_Element="_vSOq4A8VEeaRU9xxExDVUg"/>
-  <UMLLabProfile:Reference xmi:id="_vSRuMA8VEeaRU9xxExDVUg" base_Element="_vSRHIA8VEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_k6lboQ9XEeaRU9xxExDVUg" base_Element="_k6lboA9XEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_k6nQ0Q9XEeaRU9xxExDVUg" base_Element="_k6nQ0A9XEeaRU9xxExDVUg"/>
-  <UMLLabProfile:Reference xmi:id="_k6ptEA9XEeaRU9xxExDVUg" base_Element="_k6pGAA9XEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_oDCaUA9XEeaRU9xxExDVUg" base_Element="_oDBzQA9XEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_y3ai4A9XEeaRU9xxExDVUg" base_Element="_y3ZUwA9XEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7ljiQA9YEeaRU9xxExDVUg" base_Element="_7li7MA9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7ljiQg9YEeaRU9xxExDVUg" base_Element="_7ljiQQ9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7lkJUA9YEeaRU9xxExDVUg" base_Element="_7ljiQw9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7lkJUg9YEeaRU9xxExDVUg" base_Element="_7lkJUQ9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7lkJVA9YEeaRU9xxExDVUg" base_Element="_7lkJUw9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7lkwYQ9YEeaRU9xxExDVUg" base_Element="_7lkwYA9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7lkwYw9YEeaRU9xxExDVUg" base_Element="_7lkwYg9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7llXcA9YEeaRU9xxExDVUg" base_Element="_7lkwZA9YEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_AwLNAA9ZEeaRU9xxExDVUg" base_Element="_AwKl8A9ZEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_AwLNAg9ZEeaRU9xxExDVUg" base_Element="_AwLNAQ9ZEeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_InKXYA9ZEeaRU9xxExDVUg" base_Element="_InJwUA9ZEeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_uhZHYA9jEeaRU9xxExDVUg" base_Element="_uhYgUA9jEeaRU9xxExDVUg"/>
+  <UMLLabProfile:Reference xmi:id="_J9ICwA9vEeaRU9xxExDVUg" base_Element="_J9HbsA9vEeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_J9J38A9vEeaRU9xxExDVUg" base_Element="_J9JQ4A9vEeaRU9xxExDVUg"/>
+  <UMLLabProfile:Reference xmi:id="_J9LtIA9vEeaRU9xxExDVUg" base_Element="_J9LGEA9vEeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DhMJMQ-zEeaRU9xxExDVUg" base_Element="_DhLiIA-zEeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_OMPyIA-9EeaRU9xxExDVUg" base_Element="_OMPLEA-9EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_OMVRsA-9EeaRU9xxExDVUg" base_Element="_OMUqoA-9EeaRU9xxExDVUg"/>
+  <UMLLabProfile:Reference xmi:id="_OMaKMA-9EeaRU9xxExDVUg" base_Element="_OMY8EA-9EeaRU9xxExDVUg"/>
+  <UMLLabProfile:Reference xmi:id="_OMdNgA-9EeaRU9xxExDVUg" base_Element="_OMaKMQ-9EeaRU9xxExDVUg"/>
 </xmi:XMI>
