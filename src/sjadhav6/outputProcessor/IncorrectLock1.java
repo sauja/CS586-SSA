@@ -7,9 +7,6 @@ public class IncorrectLock1 extends IncorrectLock {
 	public IncorrectLock1() {
 	}
 
-	public void incorrectLockMsg() {
-		// TODO implement here
-		return;
-	}
+	public void incorrectLockMsg(){}
 
 }

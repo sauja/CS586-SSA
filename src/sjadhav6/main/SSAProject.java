@@ -9,8 +9,6 @@ import sjadhav6.InputProcessor.Account2;
 
 public class SSAProject 
 {
-
-
 	public static void main(String[] args) throws  IOException 
 	{		
 		BufferedReader readConsole = new BufferedReader(new InputStreamReader(System.in));
@@ -48,6 +46,4 @@ public class SSAProject
 		System.out.println("Thank you for using our Banking Service.\n"
 				+ "Have a nice Day!");
 	}
-
-
 }

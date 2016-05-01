@@ -24,11 +24,8 @@ public class Account1
 	 * Constructor for initializing Account 1 variables
 	 */
 	public Account1() {
-		// TODO initialize model and objects
 		this.data1=new DataStore1();
-		this.model=new MDA_EFSM(data1);
-		
-		
+		this.model=new MDA_EFSM(data1);	
 	}
 	//main method to handle Account 1 interactions
 	public void run() {
@@ -41,7 +38,7 @@ public class Account1
 			try
 			{
 				System.out.println("Enter Operation for Account1:\n"
-						+ "1:open  2:pin  3:deposit  4:withdraw  5:balance  6:login  7:logout  8:lock  9:unlock  10:exit");
+						+ "1:open  2:pin  3:deposit  4:withdraw  5:balance  6:login  7:logout  8:lock  9:unlock  10:EXIT");
 				option=readConsole.readLine();
 				switch(option)
 				{
@@ -182,12 +179,10 @@ public class Account1
 			model.correctLogin();
 		else
 			model.incorrectLogin();
-		return ;
 	}
 
 	public void logout() {
 		model.logout();
-		return ;
 	}
 
 	public void lock( String x) {

@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_UZPDYA--EeaRU9xxExDVUg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_UZPDYQ--EeaRU9xxExDVUg" source="codegen">
         <details xmi:id="_UZPDYg--EeaRU9xxExDVUg" key="codegenDirectory" value="/SSAProject/src"/>
-        <details xmi:id="_ZzhFUA-_EeaRU9xxExDVUg" key="AssociatedSourceCode" value="/SSAProject/src/sjadhav6/InputProcessor/Account1.java;206136322/1;/SSAProject/src/sjadhav6/InputProcessor/Account2.java;3615172475/1;/SSAProject/src/sjadhav6/abstractFactory/AccountAbstractFactory.java;2704599381/1;/SSAProject/src/sjadhav6/abstractFactory/AccountFactory1.java;569198093/1;/SSAProject/src/sjadhav6/datastore/DataStore.java;117309972/1;/SSAProject/src/sjadhav6/datastore/DataStore1.java;2751651263/1;/SSAProject/src/sjadhav6/datastore/DataStore2.java;512455827/1;/SSAProject/src/sjadhav6/main/Constants.java;3681716652/1;/SSAProject/src/sjadhav6/main/SSAProject.java;699567616/1;/SSAProject/src/sjadhav6/mda_efsm/MDA_EFSM.java;1559982554/1;/SSAProject/src/sjadhav6/outputProcessor/Balance.java;3866221480/1;/SSAProject/src/sjadhav6/outputProcessor/Balance1.java;624704517/1;/SSAProject/src/sjadhav6/outputProcessor/Balance2.java;3895702321/1;/SSAProject/src/sjadhav6/outputProcessor/Deposit.java;2685269353/1;/SSAProject/src/sjadhav6/outputProcessor/Deposit1.java;484159314/1;/SSAProject/src/sjadhav6/outputProcessor/Deposit2.java;2227018947/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectID.java;3559377080/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectID1.java;3375927424/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectID2.java;161341027/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectLock.java;459053090/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectLock1.java;3616133346/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectLock2.java;3189948291/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectPIN.java;2616875904/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectPIN1.java;338639565/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectPIN2.java;188467957/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectUnlock.java;3721253073/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectUnlock1.java;3788008328/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectUnlock2.java;1862231954/1;/SSAProject/src/sjadhav6/outputProcessor/InitiateAccount.java;2747307595/1;/SSAProject/src/sjadhav6/outputProcessor/InitiateAccount1.java;3414812851/1;/SSAProject/src/sjadhav6/outputProcessor/InitiateAccount2.java;3235300247/1;/SSAProject/src/sjadhav6/outputProcessor/Menu.java;3396802957/1;/SSAProject/src/sjadhav6/outputProcessor/Menu1.java;2087137740/1;/SSAProject/src/sjadhav6/outputProcessor/Menu2.java;1331774448/1;/SSAProject/src/sjadhav6/outputProcessor/MinBalance.java;1022722920/1;/SSAProject/src/sjadhav6/outputProcessor/MinBalance1.java;2871369811/1;/SSAProject/src/sjadhav6/outputProcessor/MinBalance2.java;1694575379/1;/SSAProject/src/sjadhav6/outputProcessor/OutputProcessor.java;2703991264/1;/SSAProject/src/sjadhav6/outputProcessor/PINPrompt.java;1316353658/1;/SSAProject/src/sjadhav6/outputProcessor/PINPrompt1.java;2411750819/1;/SSAProject/src/sjadhav6/outputProcessor/PINPrompt2.java;1455671100/1;/SSAProject/src/sjadhav6/outputProcessor/Penalty.java;2239683834/1;/SSAProject/src/sjadhav6/outputProcessor/Penalty1.java;2699061633/1;/SSAProject/src/sjadhav6/outputProcessor/TooManyAttempts.java;3091779667/1;/SSAProject/src/sjadhav6/outputProcessor/TooManyAttempts1.java;168490506/1;/SSAProject/src/sjadhav6/outputProcessor/TooManyAttempts2.java;3227600345/1;/SSAProject/src/sjadhav6/outputProcessor/Withdraw.java;2684596622/1;/SSAProject/src/sjadhav6/outputProcessor/Withdraw1.java;1877343589/1;/SSAProject/src/sjadhav6/outputProcessor/Withdraw2.java;2328505959/1;/SSAProject/src/sjadhav6/state/CheckBalance.java;2480802568/1;/SSAProject/src/sjadhav6/state/CheckPin.java;85766403/1;/SSAProject/src/sjadhav6/state/Idle.java;1258117041/1;/SSAProject/src/sjadhav6/state/Locked.java;3390364703/1;/SSAProject/src/sjadhav6/state/Overdrawn.java;136592979/1;/SSAProject/src/sjadhav6/state/Ready.java;2531504984/1;/SSAProject/src/sjadhav6/state/Start.java;2295448956/1;/SSAProject/src/sjadhav6/state/State.java;2314266636/1;/SSAProject/src/sjadhav6/state/Suspended.java;1224747580/1;/SSAProject/src/sjadhav6/abstractFactory/AccountFactory2.java;21938530/1;"/>
+        <details xmi:id="_ZzhFUA-_EeaRU9xxExDVUg" key="AssociatedSourceCode" value="/SSAProject/src/sjadhav6/InputProcessor/Account1.java;259243739/1;/SSAProject/src/sjadhav6/InputProcessor/Account2.java;556340973/1;/SSAProject/src/sjadhav6/abstractFactory/AccountAbstractFactory.java;2704599381/1;/SSAProject/src/sjadhav6/abstractFactory/AccountFactory1.java;1490540352/1;/SSAProject/src/sjadhav6/datastore/DataStore.java;117309972/1;/SSAProject/src/sjadhav6/datastore/DataStore1.java;2751651263/1;/SSAProject/src/sjadhav6/datastore/DataStore2.java;512455827/1;/SSAProject/src/sjadhav6/main/Constants.java;3681716652/1;/SSAProject/src/sjadhav6/main/SSAProject.java;103567361/1;/SSAProject/src/sjadhav6/mda_efsm/MDA_EFSM.java;873008639/1;/SSAProject/src/sjadhav6/outputProcessor/Balance.java;3866221480/1;/SSAProject/src/sjadhav6/outputProcessor/Balance1.java;2839728441/1;/SSAProject/src/sjadhav6/outputProcessor/Balance2.java;3895702321/1;/SSAProject/src/sjadhav6/outputProcessor/Deposit.java;2685269353/1;/SSAProject/src/sjadhav6/outputProcessor/Deposit1.java;484159314/1;/SSAProject/src/sjadhav6/outputProcessor/Deposit2.java;2227018947/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectID.java;3559377080/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectID1.java;2271049863/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectID2.java;161341027/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectLock.java;459053090/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectLock1.java;1223386122/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectLock2.java;1694458833/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectPIN.java;2616875904/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectPIN1.java;1401961463/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectPIN2.java;441791039/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectUnlock.java;3721253073/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectUnlock1.java;3043794736/1;/SSAProject/src/sjadhav6/outputProcessor/IncorrectUnlock2.java;1989239144/1;/SSAProject/src/sjadhav6/outputProcessor/InitiateAccount.java;2747307595/1;/SSAProject/src/sjadhav6/outputProcessor/InitiateAccount1.java;3414812851/1;/SSAProject/src/sjadhav6/outputProcessor/InitiateAccount2.java;1468219205/1;/SSAProject/src/sjadhav6/outputProcessor/Menu.java;3396802957/1;/SSAProject/src/sjadhav6/outputProcessor/Menu1.java;1797019225/1;/SSAProject/src/sjadhav6/outputProcessor/Menu2.java;2736010284/1;/SSAProject/src/sjadhav6/outputProcessor/MinBalance.java;1022722920/1;/SSAProject/src/sjadhav6/outputProcessor/MinBalance1.java;1442779271/1;/SSAProject/src/sjadhav6/outputProcessor/MinBalance2.java;3499702588/1;/SSAProject/src/sjadhav6/outputProcessor/OutputProcessor.java;2431330095/1;/SSAProject/src/sjadhav6/outputProcessor/PINPrompt.java;1316353658/1;/SSAProject/src/sjadhav6/outputProcessor/PINPrompt1.java;1644326564/1;/SSAProject/src/sjadhav6/outputProcessor/PINPrompt2.java;3847478394/1;/SSAProject/src/sjadhav6/outputProcessor/Penalty.java;2239683834/1;/SSAProject/src/sjadhav6/outputProcessor/Penalty1.java;2699061633/1;/SSAProject/src/sjadhav6/outputProcessor/TooManyAttempts.java;3091779667/1;/SSAProject/src/sjadhav6/outputProcessor/TooManyAttempts1.java;862411044/1;/SSAProject/src/sjadhav6/outputProcessor/TooManyAttempts2.java;1372636801/1;/SSAProject/src/sjadhav6/outputProcessor/Withdraw.java;2684596622/1;/SSAProject/src/sjadhav6/outputProcessor/Withdraw1.java;1877343589/1;/SSAProject/src/sjadhav6/outputProcessor/Withdraw2.java;2328505959/1;/SSAProject/src/sjadhav6/state/CheckBalance.java;514415532/1;/SSAProject/src/sjadhav6/state/CheckPin.java;3584275608/1;/SSAProject/src/sjadhav6/state/Idle.java;2684454953/1;/SSAProject/src/sjadhav6/state/Locked.java;3150532040/1;/SSAProject/src/sjadhav6/state/Overdrawn.java;2106020710/1;/SSAProject/src/sjadhav6/state/Ready.java;3687383642/1;/SSAProject/src/sjadhav6/state/Start.java;1366959378/1;/SSAProject/src/sjadhav6/state/State.java;2314266636/1;/SSAProject/src/sjadhav6/state/Suspended.java;3883557744/1;/SSAProject/src/sjadhav6/abstractFactory/AccountFactory2.java;672352625/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_WXwlkA--EeaRU9xxExDVUg">
@@ -366,12 +366,12 @@
               <name xsi:nil="true"/>
             </ownedParameter>
             <language>java</language>
-            <body>return new Penalty2(data);
+            <body>return null;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_y0SdUA_OEeaRU9xxExDVUg" name="getIncorrectLock" specification="_y0HeMw_OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_0MXDgQ_OEeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
-            <ownedParameter xmi:id="_0MXDgg_OEeaRU9xxExDVUg" type="_0MPuwQ_OEeaRU9xxExDVUg" direction="return">
+            <ownedParameter xmi:id="_L6CZwA_PEeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
+            <ownedParameter xmi:id="_L6CZwQ_PEeaRU9xxExDVUg" type="_Waty8A--EeaRU9xxExDVUg" direction="return">
               <name xsi:nil="true"/>
             </ownedParameter>
             <language>java</language>
@@ -379,8 +379,8 @@
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_y0SdUw_OEeaRU9xxExDVUg" name="getIncorrectUnlock" specification="_y0IsUQ_OEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_0MXDgw_OEeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
-            <ownedParameter xmi:id="_0MXDhA_OEeaRU9xxExDVUg" type="_0MQ84A_OEeaRU9xxExDVUg" direction="return">
+            <ownedParameter xmi:id="_L6DA0A_PEeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
+            <ownedParameter xmi:id="_L6DA0Q_PEeaRU9xxExDVUg" type="_WbLtAA--EeaRU9xxExDVUg" direction="return">
               <name xsi:nil="true"/>
             </ownedParameter>
             <language>java</language>
@@ -433,11 +433,11 @@
           </ownedOperation>
           <ownedOperation xmi:id="_y0HeMw_OEeaRU9xxExDVUg" name="getIncorrectLock" method="_y0SdUA_OEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_y0IFQA_OEeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
-            <ownedParameter xmi:id="_y0IFQQ_OEeaRU9xxExDVUg" type="_0MPuwQ_OEeaRU9xxExDVUg" direction="return"/>
+            <ownedParameter xmi:id="_y0IFQQ_OEeaRU9xxExDVUg" type="_Waty8A--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
           <ownedOperation xmi:id="_y0IsUQ_OEeaRU9xxExDVUg" name="getIncorrectUnlock" method="_y0SdUw_OEeaRU9xxExDVUg">
             <ownedParameter xmi:id="_y0IsUg_OEeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
-            <ownedParameter xmi:id="_y0IsUw_OEeaRU9xxExDVUg" type="_0MQ84A_OEeaRU9xxExDVUg" direction="return"/>
+            <ownedParameter xmi:id="_y0IsUw_OEeaRU9xxExDVUg" type="_WbLtAA--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_0MC6cA_OEeaRU9xxExDVUg" name="InitiateAccount"/>
@@ -1053,6 +1053,17 @@
 
 	</body>
           </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CCN74A_WEeaRU9xxExDVUg" name="noFunds" specification="_CCIcUA_WEeaRU9xxExDVUg">
+            <language>java</language>
+            <body>if (stateID==Constants.READY)
+		{
+			System.out.println(&quot;Ready-->Ready&quot;);
+			stateList[stateID].noFunds();
+			stateID=Constants.READY;
+		}
+
+	</body>
+          </ownedBehavior>
           <ownedOperation xmi:id="_WY-tkA--EeaRU9xxExDVUg" name="getID" method="_Ww43Qw--EeaRU9xxExDVUg">
             <ownedParameter xmi:id="_WY_UoA--EeaRU9xxExDVUg" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
@@ -1094,6 +1105,7 @@
             <ownedParameter xmi:id="_WtjPYQ--EeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
             <ownedParameter xmi:id="_Wtj2cg--EeaRU9xxExDVUg" type="_WY9fcA--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
+          <ownedOperation xmi:id="_CCIcUA_WEeaRU9xxExDVUg" name="noFunds" method="_CCN74A_WEeaRU9xxExDVUg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_WxsvkQ--EeaRU9xxExDVUg" name="" memberEnd="_Wxsvkg--EeaRU9xxExDVUg _Wv8cEA--EeaRU9xxExDVUg">
           <ownedEnd xmi:id="_Wxsvkg--EeaRU9xxExDVUg" name="" type="_WY9fcA--EeaRU9xxExDVUg" association="_WxsvkQ--EeaRU9xxExDVUg"/>
@@ -1114,11 +1126,8 @@
               <name xsi:nil="true"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO initialize model and objects
-		this.data1=new DataStore1();
-		this.model=new MDA_EFSM(data1);
-		
-		
+            <body>this.data1=new DataStore1();
+		this.model=new MDA_EFSM(data1);	
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwmjYg--EeaRU9xxExDVUg" name="run" specification="_WX1eEw--EeaRU9xxExDVUg">
@@ -1131,7 +1140,7 @@
 			try
 			{
 				System.out.println(&quot;Enter Operation for Account1:\n&quot;
-						+ &quot;1:open  2:pin  3:deposit  4:withdraw  5:balance  6:login  7:logout  8:lock  9:unlock  10:exit&quot;);
+						+ &quot;1:open  2:pin  3:deposit  4:withdraw  5:balance  6:login  7:logout  8:lock  9:unlock  10:EXIT&quot;);
 				option=readConsole.readLine();
 				switch(option)
 				{
@@ -1224,14 +1233,12 @@
 		model.open();
 		
 		System.out.println(&quot;Account Initialized bal=&quot;+temp.getBalance()+&quot; pin=&quot;+temp.getPin()+&quot; uid=&quot;+temp.getuID());
-		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwnKdA--EeaRU9xxExDVUg" name="balance" specification="_WX3TQA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>DataStore1 temp=(DataStore1)data1;
 		model.balance();
-		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwnxgA--EeaRU9xxExDVUg" name="pin" specification="_WX3TQQ--EeaRU9xxExDVUg">
@@ -1299,13 +1306,11 @@
 			model.correctLogin();
 		else
 			model.incorrectLogin();
-		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwoYkg--EeaRU9xxExDVUg" name="logout" specification="_WX4hYg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>model.logout();
-		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwoYkw--EeaRU9xxExDVUg" name="lock" specification="_WX5IcA--EeaRU9xxExDVUg">
@@ -1402,15 +1407,14 @@
             <body>System.out.println(&quot;In Account 2&quot;);
 		BufferedReader readConsole = new BufferedReader(new InputStreamReader(System.in));
 		String option=&quot;&quot;;
-		while(!option.equals(&quot;12&quot;))// while option is not &quot;exit&quot;
+		while(!option.equals(&quot;11&quot;))// while option is not &quot;exit&quot;
 		{
 			try
 			{
 				System.out.println(&quot;Enter Operation for Account1:\n&quot;
 						+ &quot;1:OPEN  2:PIN  3:DEPOSIT  4:WITHDRAW  \n&quot;
 						+ &quot;5:BALANCE  6:LOGIN  7:LOGOUT  \n&quot;
-						+ &quot;8:LOCK  9:UNLOCK  10:suspend  \n&quot;
-						+ &quot;11:activate  12:close&quot;);
+						+ &quot;8:suspend  9:activate  10:close	11:EXIT&quot;);
 				option=readConsole.readLine();
 				switch(option)
 				{
@@ -1454,25 +1458,17 @@
 				case &quot;7&quot;: //To logout
 					LOGOUT();
 					break;
-				case &quot;8&quot;: //To lock account
-					int pin1;
-					System.out.println(&quot;Enter PIN digits&quot;);
-					pin1=Integer.parseInt(readConsole.readLine());
-					LOCK(pin1);
-					break;
-				case &quot;9&quot;: //To unlock account
-					int pin2;
-					System.out.println(&quot;Enter PIN digits&quot;);
-					pin2=Integer.parseInt(readConsole.readLine());
-					UNLOCK(pin2);
-					break;
-				case &quot;10&quot;: // To suspend account
+				case &quot;8&quot;: // To suspend account
 					suspend();
 					break;
-				case &quot;11&quot;: //To activate suspended account
+				case &quot;9&quot;: //To activate suspended account
 					activate();
-				case &quot;12&quot;: //To close or exit
+					break;
+				case &quot;10&quot;: //To close or exit
 					close();
+					break;
+				case &quot;11&quot;: //To close or exit
+					break;
 				default:
 					System.out.println(&quot;Invalid Input&quot;);
 
@@ -1500,8 +1496,13 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 temp=(DataStore2)data2;
+		temp.setTempBalance(a);
+		temp.setTempPIN(p);
+		temp.setTempUID(y);
+		model.open();
+		
+		System.out.println(&quot;Account Initialized bal=&quot;+temp.getBalance()+&quot; pin=&quot;+temp.getPin()+&quot; uid=&quot;+temp.getuID());
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Wwo_pQ--EeaRU9xxExDVUg" name="PIN" specification="_WX-oAQ--EeaRU9xxExDVUg">
@@ -1509,8 +1510,11 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 temp=(DataStore2)data2;
+		if(temp.getPin()==x)
+			model.correctPINAboveMinBalance();
+		else
+			model.incorrectPIN(Constants.ACCOUNT2_MAXATTEMPT);
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwpmsA--EeaRU9xxExDVUg" name="DEPOSIT" specification="_WX_PEQ--EeaRU9xxExDVUg">
@@ -1518,8 +1522,10 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 temp=(DataStore2)data2;
+		temp.setTempDeposit(d);
+		model.deposit();
+		model.aboveMinBalance();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Wwpmsg--EeaRU9xxExDVUg" name="WITHDRAW" specification="_WX_2IA--EeaRU9xxExDVUg">
@@ -1527,14 +1533,26 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 temp=(DataStore2)data2;
+		temp.setTempWithdraw(w);
+		float bal=temp.getBalance();
+		if(bal>0)
+		{
+			model.withdraw();
+			model.aboveMinBalance();
+		}
+		else
+		{
+			model.withdraw();
+			model.aboveMinBalance();
+			model.noFunds();
+		}
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwpmtA--EeaRU9xxExDVUg" name="BALANCE" specification="_WX_2Ig--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 temp=(DataStore2)data2;
+		model.balance();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwqNwA--EeaRU9xxExDVUg" name="LOGIN" specification="_WYAdMA--EeaRU9xxExDVUg">
@@ -1542,50 +1560,40 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 temp=(DataStore2)data2;
+		if(temp.getuID()==y)
+			model.correctLogin();
+		else
+			model.incorrectLogin();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwqNwg--EeaRU9xxExDVUg" name="LOGOUT" specification="_WYBEQA--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>model.logout();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwsqAA--EeaRU9xxExDVUg" name="suspend" specification="_WYBEQQ--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>model.suspend();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwtREA--EeaRU9xxExDVUg" name="activate" specification="_WYBrUA--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>model.activate();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwtREQ--EeaRU9xxExDVUg" name="close" specification="_WYBrUQ--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>model.close();
 	</body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wai0MA_NEeaRU9xxExDVUg" name="UNLOCK" specification="_wadUoA_NEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_wai0MQ_NEeaRU9xxExDVUg" name="x">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dDXAQA_REeaRU9xxExDVUg" name="Account2" specification="_dDT88A_REeaRU9xxExDVUg">
+            <ownedParameter xmi:id="_dDXAQQ_REeaRU9xxExDVUg" type="_WX6WkA--EeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
             </ownedParameter>
             <language>java</language>
-            <body>// TODO Auto-generated method stub
-		
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yOdo4A_NEeaRU9xxExDVUg" name="LOCK" specification="_yObzsA_NEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_yOdo4Q_NEeaRU9xxExDVUg" name="x">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-            <language>java</language>
-            <body>// TODO Auto-generated method stub
-		
+            <body>this.data2=new DataStore2();
+		this.model=new MDA_EFSM(data2);	
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WX69oA--EeaRU9xxExDVUg" name="run" method="_Wwo_oA--EeaRU9xxExDVUg"/>
@@ -1625,15 +1633,11 @@
           <ownedOperation xmi:id="_WYBEQQ--EeaRU9xxExDVUg" name="suspend" method="_WwsqAA--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WYBrUA--EeaRU9xxExDVUg" name="activate" method="_WwtREA--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WYBrUQ--EeaRU9xxExDVUg" name="close" method="_WwtREQ--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_wadUoA_NEeaRU9xxExDVUg" name="UNLOCK" visibility="private" method="_wai0MA_NEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_wadUoQ_NEeaRU9xxExDVUg" name="x">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:id="_yObzsA_NEeaRU9xxExDVUg" name="LOCK" visibility="private" method="_yOdo4A_NEeaRU9xxExDVUg">
-            <ownedParameter xmi:id="_yObzsQ_NEeaRU9xxExDVUg" name="x">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-            </ownedParameter>
+          <ownedOperation xmi:id="_dDT88A_REeaRU9xxExDVUg" name="Account2" method="_dDXAQA_REeaRU9xxExDVUg">
+            <eAnnotations xmi:id="_dDUkAA_REeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_dDUkAQ_REeaRU9xxExDVUg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_dDT88Q_REeaRU9xxExDVUg" type="_WX6WkA--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_WxmB4A--EeaRU9xxExDVUg" name="" memberEnd="_WxmB4Q--EeaRU9xxExDVUg _Wvd68A--EeaRU9xxExDVUg">
@@ -1674,7 +1678,7 @@
             <language>java</language>
             <body>DataStore1 data1=(DataStore1) getData();
 		System.out.println(&quot;Balance for account1: $&quot;+data1.getBalance());
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__paH4A_JEeaRU9xxExDVUg" name="Balance1" specification="_WaE5wA--EeaRU9xxExDVUg">
@@ -1798,7 +1802,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ww9IsA--EeaRU9xxExDVUg" name="diplayIncorrectIDMsg" specification="_WanFQg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Incorrect user ID for account1&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WameMA--EeaRU9xxExDVUg" name="IncorrectID1">
@@ -1830,35 +1834,23 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WauaAQ--EeaRU9xxExDVUg" name="IncorrectLock1">
           <generalization xmi:id="_WttAYQ--EeaRU9xxExDVUg" general="_Waty8A--EeaRU9xxExDVUg"/>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ww9Isg--EeaRU9xxExDVUg" name="incorrectLockMsg" specification="_WawPMQ--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
           <ownedOperation xmi:id="_WavBEA--EeaRU9xxExDVUg" name="IncorrectLock1">
             <eAnnotations xmi:id="_WavoIA--EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_WavoIQ--EeaRU9xxExDVUg" key="create"/>
             </eAnnotations>
             <ownedParameter xmi:id="_WawPMA--EeaRU9xxExDVUg" type="_WauaAQ--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_WawPMQ--EeaRU9xxExDVUg" name="incorrectLockMsg" method="_Ww9Isg--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WawPMQ--EeaRU9xxExDVUg" name="incorrectLockMsg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_Waw2QA--EeaRU9xxExDVUg" name="IncorrectLock2">
           <generalization xmi:id="_WttAYg--EeaRU9xxExDVUg" general="_Waty8A--EeaRU9xxExDVUg"/>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ww9vwA--EeaRU9xxExDVUg" name="incorrectLockMsg" specification="_Wa284A--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
           <ownedOperation xmi:id="_WaxdUA--EeaRU9xxExDVUg" name="IncorrectLock2">
             <eAnnotations xmi:id="_Wa1HsA--EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_Wa1HsQ--EeaRU9xxExDVUg" key="create"/>
             </eAnnotations>
             <ownedParameter xmi:id="_Wa2V0Q--EeaRU9xxExDVUg" type="_Waw2QA--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_Wa284A--EeaRU9xxExDVUg" name="incorrectLockMsg" method="_Ww9vwA--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_Wa284A--EeaRU9xxExDVUg" name="incorrectLockMsg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WbB8AA--EeaRU9xxExDVUg" name="IncorrectPIN" isAbstract="true">
           <ownedOperation xmi:id="_WbCjEA--EeaRU9xxExDVUg" name="displayIncorrectPINMsg" isAbstract="true"/>
@@ -1868,7 +1860,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ww9vwQ--EeaRU9xxExDVUg" name="displayIncorrectPINMsg" specification="_WbDxNA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Incorrect PIN for account1&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WbDKIQ--EeaRU9xxExDVUg" name="IncorrectPIN1">
@@ -1884,7 +1876,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ww9vwg--EeaRU9xxExDVUg" name="displayIncorrectPINMsg" specification="_WbJ30A--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Incorrect PIN for account2&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WbE_UA--EeaRU9xxExDVUg" name="IncorrectPIN2">
@@ -1903,7 +1895,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ww-W0A--EeaRU9xxExDVUg" name="incorrectUnlockMsg" specification="_WbOJQg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Entered Pin is Invalid.&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WbNiMA--EeaRU9xxExDVUg" name="IncorrectUnlock1">
@@ -1916,19 +1908,13 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WbOwUA--EeaRU9xxExDVUg" name="IncorrectUnlock2">
           <generalization xmi:id="_WtuOgA--EeaRU9xxExDVUg" general="_WbLtAA--EeaRU9xxExDVUg"/>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxAMAA--EeaRU9xxExDVUg" name="incorrectUnlockMsg" specification="_WbTo0A--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
           <ownedOperation xmi:id="_WbPXYA--EeaRU9xxExDVUg" name="IncorrectUnlock2">
             <eAnnotations xmi:id="_WbP-cA--EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_WbP-cQ--EeaRU9xxExDVUg" key="create"/>
             </eAnnotations>
             <ownedParameter xmi:id="_WbP-cw--EeaRU9xxExDVUg" type="_WbOwUA--EeaRU9xxExDVUg" direction="return"/>
           </ownedOperation>
-          <ownedOperation xmi:id="_WbTo0A--EeaRU9xxExDVUg" name="incorrectUnlockMsg" method="_WxAMAA--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WbTo0A--EeaRU9xxExDVUg" name="incorrectUnlockMsg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WbU28A--EeaRU9xxExDVUg" name="InitiateAccount" isAbstract="true">
           <ownedAttribute xmi:id="_WwDw0A--EeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg" isReadOnly="true" association="_Wx0rYQ--EeaRU9xxExDVUg"/>
@@ -1980,22 +1966,28 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WbZIYA--EeaRU9xxExDVUg" name="InitiateAccount2">
           <generalization xmi:id="_Wtwqww--EeaRU9xxExDVUg" general="_WbU28A--EeaRU9xxExDVUg"/>
-          <ownedAttribute xmi:id="_WwEX4A--EeaRU9xxExDVUg" name="data2" visibility="private" type="_WYciEA--EeaRU9xxExDVUg" association="_Wx15gQ--EeaRU9xxExDVUg"/>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxBaIA--EeaRU9xxExDVUg" name="InitiateAccount2" specification="_WtwDtA--EeaRU9xxExDVUg">
             <ownedParameter xmi:id="_WxBaIQ--EeaRU9xxExDVUg" name="data" type="_WYciEA--EeaRU9xxExDVUg"/>
-            <ownedParameter xmi:id="_WxBaIg--EeaRU9xxExDVUg" type="_WbZIYA--EeaRU9xxExDVUg" direction="return"/>
+            <ownedParameter xmi:id="_WxBaIg--EeaRU9xxExDVUg" type="_WbZIYA--EeaRU9xxExDVUg" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
 	</body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxBaIw--EeaRU9xxExDVUg" name="initiateAccount" specification="_WbaWgA--EeaRU9xxExDVUg">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_THEO4A_UEeaRU9xxExDVUg" name="initiateAccount" specification="_WbaWgA--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>DataStore2 data2=(DataStore2) getData();
+		data2.setPin(data2.getTempPIN());
+		data2.setuID(data2.getTempUID());
+		data2.setBalance(data2.getTempBalance());
+		data2.setTempBalance(0);
+		data2.setTempPIN(0);
+		data2.setTempUID(0);
+		
 	</body>
           </ownedBehavior>
-          <ownedOperation xmi:id="_WbaWgA--EeaRU9xxExDVUg" name="initiateAccount" method="_WxBaIw--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WbaWgA--EeaRU9xxExDVUg" name="initiateAccount" method="_THEO4A_UEeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WtwDtA--EeaRU9xxExDVUg" name="InitiateAccount2" method="_WxBaIA--EeaRU9xxExDVUg">
             <eAnnotations xmi:id="_WtwqwA--EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_WtwqwQ--EeaRU9xxExDVUg" key="create"/>
@@ -2012,33 +2004,22 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxBaJA--EeaRU9xxExDVUg" name="displayMenu" specification="_WbhrQg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Enter Operation for Account1:\n&quot;
-				+ &quot;3:deposit  4:withdraw  5:balance  7:logout  8:lock  9:unlock  10:exit&quot;);
-		return;
+				+ &quot;3:deposit  4:withdraw  5:balance  7:logout  8:lock  9:unlock  10:exit&quot;);	
 	</body>
           </ownedBehavior>
-          <ownedOperation xmi:id="_WbhEMA--EeaRU9xxExDVUg" name="Menu1">
-            <eAnnotations xmi:id="_WbhEMQ--EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-              <details xmi:id="_WbhEMg--EeaRU9xxExDVUg" key="create"/>
-            </eAnnotations>
-            <ownedParameter xmi:id="_WbhrQQ--EeaRU9xxExDVUg" type="_WbgdIA--EeaRU9xxExDVUg" direction="return"/>
-          </ownedOperation>
           <ownedOperation xmi:id="_WbhrQg--EeaRU9xxExDVUg" name="displayMenu" method="_WxBaJA--EeaRU9xxExDVUg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WbiSUA--EeaRU9xxExDVUg" name="Menu2">
           <generalization xmi:id="_WtxR0A--EeaRU9xxExDVUg" general="_WbfPAA--EeaRU9xxExDVUg"/>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCBMA--EeaRU9xxExDVUg" name="displayMenu" specification="_Wbjgcg--EeaRU9xxExDVUg">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Uq540A_XEeaRU9xxExDVUg" name="displayMenu" specification="_Wbjgcg--EeaRU9xxExDVUg">
             <language>java</language>
-            <body>// TODO implement here
-		return;
+            <body>System.out.println(&quot;Enter Operation for Account2:\n&quot;
+				+ &quot;3:DEPOSIT  4:WITHDRAW  5:BALANCE\n&quot;
+				+ &quot;7:LOGOUT  8:suspend\n&quot;
+				+ &quot;9:activate  10:close&quot;);
 	</body>
           </ownedBehavior>
-          <ownedOperation xmi:id="_Wbi5YA--EeaRU9xxExDVUg" name="Menu2">
-            <eAnnotations xmi:id="_Wbi5YQ--EeaRU9xxExDVUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-              <details xmi:id="_Wbi5Yg--EeaRU9xxExDVUg" key="create"/>
-            </eAnnotations>
-            <ownedParameter xmi:id="_WbjgcQ--EeaRU9xxExDVUg" type="_WbiSUA--EeaRU9xxExDVUg" direction="return"/>
-          </ownedOperation>
-          <ownedOperation xmi:id="_Wbjgcg--EeaRU9xxExDVUg" name="displayMenu" method="_WxCBMA--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_Wbjgcg--EeaRU9xxExDVUg" name="displayMenu" method="_Uq540A_XEeaRU9xxExDVUg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WbkHgA--EeaRU9xxExDVUg" name="MinBalance" isAbstract="true">
           <ownedOperation xmi:id="_Wbnx4A--EeaRU9xxExDVUg" name="displayMinBalanceMsg" isAbstract="true"/>
@@ -2048,7 +2029,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCBMQ--EeaRU9xxExDVUg" name="displayMinBalanceMsg" specification="_WbqOIQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Account below min balance allowed for account1&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WbpAAA--EeaRU9xxExDVUg" name="MinBalance1">
@@ -2064,7 +2045,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCBMg--EeaRU9xxExDVUg" name="displayMinBalanceMsg" specification="_WbtRcA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;No Funds for account2&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WbrcQA--EeaRU9xxExDVUg" name="MinBalance2">
@@ -2094,101 +2075,109 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCBMw--EeaRU9xxExDVUg" name="initiateAccount" specification="_WtzHAA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			initiateAccount=af.getInitiateAccount(data);
-			initiateAccount.initiateAccount();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		initiateAccount=af.getInitiateAccount(data);
+		initiateAccount.initiateAccount();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCoQA--EeaRU9xxExDVUg" name="displayPINPrompt" specification="_Wt1jQA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			pinPrompt=af.getPINPrompt(data);
-			pinPrompt.displayPINPrompt();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		pinPrompt=af.getPINPrompt(data);
+		pinPrompt.displayPINPrompt();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCoQg--EeaRU9xxExDVUg" name="diplayIncorrectIDMsg" specification="_Wt2KUA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			incorrectID=af.getIncorrectID(data);
-			incorrectID.diplayIncorrectIDMsg();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		incorrectID=af.getIncorrectID(data);
+		incorrectID.diplayIncorrectIDMsg();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxCoRA--EeaRU9xxExDVUg" name="displayMenu" specification="_Wt2xYA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			menu=af.getMenu(data);
-			menu.displayMenu();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		menu=af.getMenu(data);
+		menu.displayMenu();
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxDPUA--EeaRU9xxExDVUg" name="displayIncorrectPINMsg" specification="_Wt3YcA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			incorrectPIN=af.getIncorrectPIN(data);
-			incorrectPIN.displayIncorrectPINMsg();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		incorrectPIN=af.getIncorrectPIN(data);
+		incorrectPIN.displayIncorrectPINMsg();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxDPUg--EeaRU9xxExDVUg" name="displayTooManyAttemptsMsg" specification="_Wt3Ycg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			tooManyAttempts=af.getTooManyAttempts(data);
-			tooManyAttempts.displayTooManyAttemptsMsg();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		tooManyAttempts=af.getTooManyAttempts(data);
+		tooManyAttempts.displayTooManyAttemptsMsg();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxDPVA--EeaRU9xxExDVUg" name="makeDeposit" specification="_Wt3_gQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			deposit=af.getDeposit(data);
-			deposit.makeDeposit();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		deposit=af.getDeposit(data);
+		deposit.makeDeposit();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxDPVg--EeaRU9xxExDVUg" name="displayBalance" specification="_Wt4mkA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			balance=af.getBalance(data);
-			balance.displayBalance();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		balance=af.getBalance(data);
+		balance.displayBalance();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxDPWA--EeaRU9xxExDVUg" name="makeWithdraw" specification="_Wt4mkg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			withdraw=af.getWithdraw(data);
-			withdraw.makeWithdraw();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		withdraw=af.getWithdraw(data);
+		withdraw.makeWithdraw();
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxD2YA--EeaRU9xxExDVUg" name="displayMinBalanceMsg" specification="_Wt5NoA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
 			minBalance=af.getMinBalance(data);
 			minBalance.displayMinBalanceMsg();
-		}
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxD2Yg--EeaRU9xxExDVUg" name="applyPenalty" specification="_Wt50sA--EeaRU9xxExDVUg">
@@ -2259,7 +2248,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxEdcA--EeaRU9xxExDVUg" name="displayPINPrompt" specification="_WcKkcA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Please Enter Pin operation for account1&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WcKkcA--EeaRU9xxExDVUg" name="displayPINPrompt" method="_WxEdcA--EeaRU9xxExDVUg"/>
@@ -2269,7 +2258,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxEdcQ--EeaRU9xxExDVUg" name="displayPINPrompt" specification="_WcLLgQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Please Enter Pin operation for account2&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WcLLgQ--EeaRU9xxExDVUg" name="displayPINPrompt" method="_WxEdcQ--EeaRU9xxExDVUg"/>
@@ -2326,7 +2315,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxFEgw--EeaRU9xxExDVUg" name="displayTooManyAttemptsMsg" specification="_WcacEQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Too many attempts for account 1&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WcZ1AA--EeaRU9xxExDVUg" name="TooManyAttempts1">
@@ -2342,7 +2331,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxFEhA--EeaRU9xxExDVUg" name="displayTooManyAttemptsMsg" specification="_WcetgA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>System.out.println(&quot;Too many attempts for account 2&quot;);
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WcdfYA--EeaRU9xxExDVUg" name="TooManyAttempts2">
@@ -2441,9 +2430,6 @@
         <packagedElement xmi:type="uml:Association" xmi:id="_Wx0rYQ--EeaRU9xxExDVUg" name="" memberEnd="_Wx0rYg--EeaRU9xxExDVUg _WwDw0A--EeaRU9xxExDVUg">
           <ownedEnd xmi:id="_Wx0rYg--EeaRU9xxExDVUg" name="" type="_WbU28A--EeaRU9xxExDVUg" association="_Wx0rYQ--EeaRU9xxExDVUg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_Wx15gQ--EeaRU9xxExDVUg" name="" memberEnd="_Wx15gg--EeaRU9xxExDVUg _WwEX4A--EeaRU9xxExDVUg">
-          <ownedEnd xmi:id="_Wx15gg--EeaRU9xxExDVUg" name="" type="_WbZIYA--EeaRU9xxExDVUg" association="_Wx15gQ--EeaRU9xxExDVUg"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_Wx2gkQ--EeaRU9xxExDVUg" name="" memberEnd="_Wx2gkg--EeaRU9xxExDVUg _WwFmAA--EeaRU9xxExDVUg">
           <ownedEnd xmi:id="_Wx2gkg--EeaRU9xxExDVUg" name="" type="_Wbt4gA--EeaRU9xxExDVUg" association="_Wx2gkQ--EeaRU9xxExDVUg"/>
         </packagedElement>
@@ -2507,6 +2493,7 @@
         <packagedElement xmi:type="uml:Association" xmi:id="_91i9kA_JEeaRU9xxExDVUg" name="" memberEnd="_91i9kQ_JEeaRU9xxExDVUg _91f6QA_JEeaRU9xxExDVUg">
           <ownedEnd xmi:id="_91i9kQ_JEeaRU9xxExDVUg" name="" type="_WZK60A--EeaRU9xxExDVUg" association="_91i9kA_JEeaRU9xxExDVUg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RmAeEA_PEeaRU9xxExDVUg" name="Penalty2"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_WRF84A--EeaRU9xxExDVUg" name="state">
         <packagedElement xmi:type="uml:Class" xmi:id="_WcqTsA--EeaRU9xxExDVUg" name="CheckBalance">
@@ -2522,7 +2509,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxGSpA--EeaRU9xxExDVUg" name="getID" specification="_WdOUYA--EeaRU9xxExDVUg">
@@ -2534,22 +2521,10 @@
             <body>return ID;
 	</body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxG5sA--EeaRU9xxExDVUg" name="aboveMinBalance" specification="_WdO7cQ--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxG5sQ--EeaRU9xxExDVUg" name="belowMinBalancePenalty" specification="_WdPigA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.applyPenalty();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxG5sg--EeaRU9xxExDVUg" name="belowMinBalance" specification="_WdPigQ--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WdOUYA--EeaRU9xxExDVUg" name="getID" method="_WxGSpA--EeaRU9xxExDVUg">
@@ -2557,9 +2532,9 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_WdO7cQ--EeaRU9xxExDVUg" name="aboveMinBalance" method="_WxG5sA--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WdO7cQ--EeaRU9xxExDVUg" name="aboveMinBalance"/>
           <ownedOperation xmi:id="_WdPigA--EeaRU9xxExDVUg" name="belowMinBalancePenalty" method="_WxG5sQ--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WdPigQ--EeaRU9xxExDVUg" name="belowMinBalance" method="_WxG5sg--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WdPigQ--EeaRU9xxExDVUg" name="belowMinBalance"/>
           <ownedOperation xmi:id="_WdQJkA--EeaRU9xxExDVUg" name="open"/>
           <ownedOperation xmi:id="_WdRXsg--EeaRU9xxExDVUg" name="correctLogin"/>
           <ownedOperation xmi:id="_WdR-ww--EeaRU9xxExDVUg" name="incorrectLogin"/>
@@ -2599,7 +2574,6 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxHgww--EeaRU9xxExDVUg" name="getID" specification="_WeZZEA--EeaRU9xxExDVUg">
@@ -2614,18 +2588,11 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxIH0A--EeaRU9xxExDVUg" name="correctPINAboveMinBalance" specification="_WeaAIQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayMenu();
-		return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxIH0Q--EeaRU9xxExDVUg" name="correctPINBelowMinBalance" specification="_WeaAIg--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayMenu();
-		return ;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxIH0g--EeaRU9xxExDVUg" name="logout" specification="_WeaAIw--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>return ;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxJ9AA--EeaRU9xxExDVUg" name="incorrectPIN" specification="_WuMvoA--EeaRU9xxExDVUg">
@@ -2635,8 +2602,7 @@
 		if(data.getAttempts()>=Constants.ACCOUNT1_MAXATTEMPT)
 			outp.displayTooManyAttemptsMsg();
 		else
-			data.setAttempts(data.getAttempts()+1);
-		
+			data.setAttempts(data.getAttempts()+1);	
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WeZZEA--EeaRU9xxExDVUg" name="getID" method="_WxHgww--EeaRU9xxExDVUg">
@@ -2646,7 +2612,7 @@
           </ownedOperation>
           <ownedOperation xmi:id="_WeaAIQ--EeaRU9xxExDVUg" name="correctPINAboveMinBalance" method="_WxIH0A--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WeaAIg--EeaRU9xxExDVUg" name="correctPINBelowMinBalance" method="_WxIH0Q--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WeaAIw--EeaRU9xxExDVUg" name="logout" method="_WxIH0g--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WeaAIw--EeaRU9xxExDVUg" name="logout"/>
           <ownedOperation xmi:id="_WeanMA--EeaRU9xxExDVUg" name="open"/>
           <ownedOperation xmi:id="_WeeRkA--EeaRU9xxExDVUg" name="correctLogin"/>
           <ownedOperation xmi:id="_WeffsA--EeaRU9xxExDVUg" name="incorrectLogin"/>
@@ -2686,7 +2652,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxLyMw--EeaRU9xxExDVUg" name="getID" specification="_WfkdwA--EeaRU9xxExDVUg">
@@ -2757,7 +2723,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxNnYA--EeaRU9xxExDVUg" name="getID" specification="_WgkjUA--EeaRU9xxExDVUg">
@@ -2769,16 +2735,10 @@
             <body>return ID;
 	</body>
           </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxNnYg--EeaRU9xxExDVUg" name="correctUnlock" specification="_WglKYA--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxNnYw--EeaRU9xxExDVUg" name="incorrectUnLock" specification="_WglKYQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayIncorrectPINMsg();
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WgkjUA--EeaRU9xxExDVUg" name="getID" method="_WxNnYA--EeaRU9xxExDVUg">
@@ -2786,7 +2746,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_WglKYA--EeaRU9xxExDVUg" name="correctUnlock" method="_WxNnYg--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WglKYA--EeaRU9xxExDVUg" name="correctUnlock"/>
           <ownedOperation xmi:id="_WglKYQ--EeaRU9xxExDVUg" name="incorrectUnLock" method="_WxNnYw--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WglKYg--EeaRU9xxExDVUg" name="open"/>
           <ownedOperation xmi:id="_WgmYgA--EeaRU9xxExDVUg" name="correctLogin"/>
@@ -2829,7 +2789,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxO1gw--EeaRU9xxExDVUg" name="getID" specification="_WkR-oA--EeaRU9xxExDVUg">
@@ -2844,37 +2804,25 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxO1hQ--EeaRU9xxExDVUg" name="withdraw" specification="_WkR-og--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayMinBalanceMsg();
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxO1hg--EeaRU9xxExDVUg" name="balance" specification="_WkSlsA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayBalance();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxPckA--EeaRU9xxExDVUg" name="correctLock" specification="_WkVB8A--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxPckQ--EeaRU9xxExDVUg" name="incorrectLock" specification="_WkVB8Q--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayIncorrectPINMsg();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxPckg--EeaRU9xxExDVUg" name="logout" specification="_WkVpAA--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxPckw--EeaRU9xxExDVUg" name="deposit" specification="_WkVpAQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.makeDeposit();
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WkR-oA--EeaRU9xxExDVUg" name="getID" method="_WxO1gw--EeaRU9xxExDVUg">
@@ -2884,9 +2832,9 @@
           </ownedOperation>
           <ownedOperation xmi:id="_WkR-og--EeaRU9xxExDVUg" name="withdraw" method="_WxO1hQ--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WkSlsA--EeaRU9xxExDVUg" name="balance" method="_WxO1hg--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WkVB8A--EeaRU9xxExDVUg" name="correctLock" method="_WxPckA--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WkVB8A--EeaRU9xxExDVUg" name="correctLock"/>
           <ownedOperation xmi:id="_WkVB8Q--EeaRU9xxExDVUg" name="incorrectLock" method="_WxPckQ--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WkVpAA--EeaRU9xxExDVUg" name="logout" method="_WxPckg--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WkVpAA--EeaRU9xxExDVUg" name="logout"/>
           <ownedOperation xmi:id="_WkVpAQ--EeaRU9xxExDVUg" name="deposit" method="_WxPckw--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_WkWQEA--EeaRU9xxExDVUg" name="open"/>
           <ownedOperation xmi:id="_WkW3Iw--EeaRU9xxExDVUg" name="correctLogin"/>
@@ -2924,7 +2872,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxQqsA--EeaRU9xxExDVUg" name="getID" specification="_WlopgA--EeaRU9xxExDVUg">
@@ -2939,49 +2887,31 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxQqsg--EeaRU9xxExDVUg" name="noFunds" specification="_WlpQkA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayMinBalanceMsg();
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxQqsw--EeaRU9xxExDVUg" name="incorrectLock" specification="_WlpQkQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayIncorrectPINMsg();
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxQqtA--EeaRU9xxExDVUg" name="deposit" specification="_Wlp3oA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.makeDeposit();
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxQqtQ--EeaRU9xxExDVUg" name="balance" specification="_Wlp3oQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayBalance();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxRRwA--EeaRU9xxExDVUg" name="suspend" specification="_Wlp3og--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxRRwQ--EeaRU9xxExDVUg" name="correctLock" specification="_WlqesA--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxRRwg--EeaRU9xxExDVUg" name="withdraw" specification="_WlqesQ--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.makeWithdraw();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxRRww--EeaRU9xxExDVUg" name="logout" specification="_Wlqesg--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WlopgA--EeaRU9xxExDVUg" name="getID" method="_WxQqsA--EeaRU9xxExDVUg">
@@ -2993,10 +2923,10 @@
           <ownedOperation xmi:id="_WlpQkQ--EeaRU9xxExDVUg" name="incorrectLock" method="_WxQqsw--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_Wlp3oA--EeaRU9xxExDVUg" name="deposit" method="_WxQqtA--EeaRU9xxExDVUg"/>
           <ownedOperation xmi:id="_Wlp3oQ--EeaRU9xxExDVUg" name="balance" method="_WxQqtQ--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_Wlp3og--EeaRU9xxExDVUg" name="suspend" method="_WxRRwA--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WlqesA--EeaRU9xxExDVUg" name="correctLock" method="_WxRRwQ--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_Wlp3og--EeaRU9xxExDVUg" name="suspend"/>
+          <ownedOperation xmi:id="_WlqesA--EeaRU9xxExDVUg" name="correctLock"/>
           <ownedOperation xmi:id="_WlqesQ--EeaRU9xxExDVUg" name="withdraw" method="_WxRRwg--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_Wlqesg--EeaRU9xxExDVUg" name="logout" method="_WxRRww--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_Wlqesg--EeaRU9xxExDVUg" name="logout"/>
           <ownedOperation xmi:id="_WlrFwA--EeaRU9xxExDVUg" name="open"/>
           <ownedOperation xmi:id="_Wlrs0w--EeaRU9xxExDVUg" name="correctLogin"/>
           <ownedOperation xmi:id="_Wls68g--EeaRU9xxExDVUg" name="incorrectLogin"/>
@@ -3031,7 +2961,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxR40w--EeaRU9xxExDVUg" name="getID" specification="_WmoIAA--EeaRU9xxExDVUg">
@@ -3141,7 +3071,7 @@
             </ownedParameter>
             <language>java</language>
             <body>super(data);
-		// TODO Auto-generated constructor stub
+
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxU8Iw--EeaRU9xxExDVUg" name="getID" specification="_WoXNYA--EeaRU9xxExDVUg">
@@ -3156,19 +3086,7 @@
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxVjMA--EeaRU9xxExDVUg" name="balance" specification="_WoX0cA--EeaRU9xxExDVUg">
             <language>java</language>
             <body>outp.displayBalance();
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxVjMQ--EeaRU9xxExDVUg" name="close" specification="_WoX0cQ--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
-	</body>
-          </ownedBehavior>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WxVjMg--EeaRU9xxExDVUg" name="activate" specification="_WoYbgA--EeaRU9xxExDVUg">
-            <language>java</language>
-            <body>// TODO implement here
-		return;
+		
 	</body>
           </ownedBehavior>
           <ownedOperation xmi:id="_WoXNYA--EeaRU9xxExDVUg" name="getID" method="_WxU8Iw--EeaRU9xxExDVUg">
@@ -3177,8 +3095,8 @@
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_WoX0cA--EeaRU9xxExDVUg" name="balance" method="_WxVjMA--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WoX0cQ--EeaRU9xxExDVUg" name="close" method="_WxVjMQ--EeaRU9xxExDVUg"/>
-          <ownedOperation xmi:id="_WoYbgA--EeaRU9xxExDVUg" name="activate" method="_WxVjMg--EeaRU9xxExDVUg"/>
+          <ownedOperation xmi:id="_WoX0cQ--EeaRU9xxExDVUg" name="close"/>
+          <ownedOperation xmi:id="_WoYbgA--EeaRU9xxExDVUg" name="activate"/>
           <ownedOperation xmi:id="_WoYbgQ--EeaRU9xxExDVUg" name="open"/>
           <ownedOperation xmi:id="_WoZCkw--EeaRU9xxExDVUg" name="correctLogin"/>
           <ownedOperation xmi:id="_WoZpow--EeaRU9xxExDVUg" name="incorrectLogin"/>
@@ -3240,8 +3158,6 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_WbFmYA--EeaRU9xxExDVUg" base_Element="_WbE_UA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WbOJQA--EeaRU9xxExDVUg" base_Element="_WbNiMA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WbP-cg--EeaRU9xxExDVUg" base_Element="_WbPXYA--EeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_WbhrQA--EeaRU9xxExDVUg" base_Element="_WbhEMA--EeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_WbjgcA--EeaRU9xxExDVUg" base_Element="_Wbi5YA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WbpnEg--EeaRU9xxExDVUg" base_Element="_WbpAAA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WbsDUA--EeaRU9xxExDVUg" base_Element="_WbrcQA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WcZ1Aw--EeaRU9xxExDVUg" base_Element="_WcZ1AA--EeaRU9xxExDVUg"/>
@@ -3883,7 +3799,6 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_Wv9qMQ--EeaRU9xxExDVUg" base_Element="_Wv9DIQ--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WwAtgA--EeaRU9xxExDVUg" base_Element="_WwAGcQ--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WwDJwA--EeaRU9xxExDVUg" base_Element="_WwBUkA--EeaRU9xxExDVUg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_WwE-8A--EeaRU9xxExDVUg" base_Element="_WwEX4A--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WwFmAQ--EeaRU9xxExDVUg" base_Element="_WwFmAA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WwGNEQ--EeaRU9xxExDVUg" base_Element="_WwGNEA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_WwG0IQ--EeaRU9xxExDVUg" base_Element="_WwG0IA--EeaRU9xxExDVUg"/>
@@ -3920,7 +3835,6 @@
   <UMLLabProfile:Reference xmi:id="_WxzdQA--EeaRU9xxExDVUg" base_Element="_WxwZ8Q--EeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_Wx0rYA--EeaRU9xxExDVUg" base_Element="_Wx0EUA--EeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_Wx15gA--EeaRU9xxExDVUg" base_Element="_Wx0rYQ--EeaRU9xxExDVUg"/>
-  <UMLLabProfile:Reference xmi:id="_Wx2gkA--EeaRU9xxExDVUg" base_Element="_Wx15gQ--EeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_Wx3HoA--EeaRU9xxExDVUg" base_Element="_Wx2gkQ--EeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_Wx3usA--EeaRU9xxExDVUg" base_Element="_Wx3HoQ--EeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_Wx4VwA--EeaRU9xxExDVUg" base_Element="_Wx3usQ--EeaRU9xxExDVUg"/>
@@ -4008,4 +3922,19 @@
   <UMLLabProfile:Reference xmi:id="_0MPuwA_OEeaRU9xxExDVUg" base_Element="_0MPHsA_OEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_0MQV0A_OEeaRU9xxExDVUg" base_Element="_0MPuwQ_OEeaRU9xxExDVUg"/>
   <UMLLabProfile:Reference xmi:id="_0MQ84Q_OEeaRU9xxExDVUg" base_Element="_0MQ84A_OEeaRU9xxExDVUg"/>
+  <UMLLabProfile:Reference xmi:id="_RmBFIA_PEeaRU9xxExDVUg" base_Element="_RmAeEA_PEeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__rYuwA_SEeaRU9xxExDVUg" base_Element="_WeaAIw--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AQ4zEA_UEeaRU9xxExDVUg" base_Element="_Wa284A--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AQ4zEQ_UEeaRU9xxExDVUg" base_Element="_WbTo0A--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_EL_WsA_UEeaRU9xxExDVUg" base_Element="_WawPMQ--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6GzgA_VEeaRU9xxExDVUg" base_Element="_WdO7cQ--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6HakA_VEeaRU9xxExDVUg" base_Element="_WdPigQ--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6J20A_VEeaRU9xxExDVUg" base_Element="_WglKYA--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6OIQA_VEeaRU9xxExDVUg" base_Element="_WkVB8A--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6OvUA_VEeaRU9xxExDVUg" base_Element="_WkVpAA--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6RLkA_VEeaRU9xxExDVUg" base_Element="_Wlp3og--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6RLkQ_VEeaRU9xxExDVUg" base_Element="_WlqesA--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6RyoA_VEeaRU9xxExDVUg" base_Element="_Wlqesg--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6UO4A_VEeaRU9xxExDVUg" base_Element="_WoX0cQ--EeaRU9xxExDVUg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Z6UO4Q_VEeaRU9xxExDVUg" base_Element="_WoYbgA--EeaRU9xxExDVUg"/>
 </xmi:XMI>

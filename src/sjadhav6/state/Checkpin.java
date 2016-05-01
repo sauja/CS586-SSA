@@ -7,7 +7,6 @@ public class CheckPin extends State {
 
 	public CheckPin(DataStore data) {
 		super(data);
-		// TODO Auto-generated constructor stub
 	}
 	private final int ID=Constants.CHECKPIN;
 	public int getID()
@@ -16,17 +15,12 @@ public class CheckPin extends State {
 	}
 	public void correctPINAboveMinBalance() {
 		outp.displayMenu();
-		return ;
 	}
 	public void correctPINBelowMinBalance() {
 		outp.displayMenu();
-		return ;
 	}
 
-	public void logout() {
-		
-		return ;
-	}
+	public void logout(){}
 
 	public void incorrectPIN() {
 		outp.displayIncorrectPINMsg();	
@@ -34,95 +28,26 @@ public class CheckPin extends State {
 		if(data.getAttempts()>=Constants.ACCOUNT1_MAXATTEMPT)
 			outp.displayTooManyAttemptsMsg();
 		else
-			data.setAttempts(data.getAttempts()+1);
-		
+			data.setAttempts(data.getAttempts()+1);	
 	}
 	
-@Override
-public void open() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void correctLogin() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void incorrectLogin() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void balance() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void deposit() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void aboveMinBalance() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void belowMinBalance() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void correctLock() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void incorrectLock() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void correctUnlock() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void incorrectUnlock() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void withdraw() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void belowMinBalancePenalty() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void suspend() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void activate() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void noFunds() {
-		// TODO Auto-generated method stub
-		
-	}
-@Override
-public void close() {
-		// TODO Auto-generated method stub
-		
-	}
+@Override public void open(){}
+@Override public void correctLogin(){}
+@Override public void incorrectLogin(){}
+@Override public void balance(){}
+@Override public void deposit(){}
+@Override public void aboveMinBalance(){}
+@Override public void belowMinBalance(){}
+@Override public void correctLock(){}
+@Override public void incorrectLock(){}
+@Override public void correctUnlock(){}
+@Override public void incorrectUnlock(){}
+@Override public void withdraw(){}
+@Override public void belowMinBalancePenalty(){}
+@Override public void suspend(){}
+@Override public void activate(){}
+@Override public void noFunds(){}
+@Override public void close(){}
 
 
 }

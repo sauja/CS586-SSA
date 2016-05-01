@@ -26,47 +26,47 @@ public class AccountFactory1 extends AccountAbstractFactory {
 	}
 	@Override
 	public IncorrectPIN getIncorrectPIN(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new IncorrectPIN1();
 	}
 	@Override
 	public TooManyAttempts getTooManyAttempts(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new TooManyAttempts1();
 	}
 	@Override
 	public Deposit getDeposit(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new Deposit1(data);
 	}
 	@Override
 	public Balance getBalance(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new Balance1(data);
 	}
 	@Override
 	public Withdraw getWithdraw(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new Withdraw1(data);
 	}
 	@Override
 	public MinBalance getMinBalance(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new MinBalance1();
 	}
 	@Override
 	public Penalty getPenalty(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new Penalty1(data);
 	}
 	@Override
 	public IncorrectLock getIncorrectLock(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new IncorrectLock1();
 	}
 	@Override
 	public IncorrectUnlock getIncorrectUnlock(DataStore data) {
-		// TODO Auto-generated method stub
+
 		return new IncorrectUnlock1();
 	}
 

@@ -4,6 +4,7 @@ import java.util.*;
 
 import sjadhav6.abstractFactory.AccountAbstractFactory;
 import sjadhav6.abstractFactory.AccountFactory1;
+import sjadhav6.abstractFactory.AccountFactory2;
 import sjadhav6.datastore.DataStore;
 
 public class OutputProcessor {
@@ -40,95 +41,103 @@ public class OutputProcessor {
 	public void initiateAccount() 
 	{
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			initiateAccount=af.getInitiateAccount(data);
-			initiateAccount.initiateAccount();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		initiateAccount=af.getInitiateAccount(data);
+		initiateAccount.initiateAccount();
 	}
-	
+
 	public void displayPINPrompt() {
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			pinPrompt=af.getPINPrompt(data);
-			pinPrompt.displayPINPrompt();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		pinPrompt=af.getPINPrompt(data);
+		pinPrompt.displayPINPrompt();
+
 	}
 
 	public void diplayIncorrectIDMsg() 
 	{
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			incorrectID=af.getIncorrectID(data);
-			incorrectID.diplayIncorrectIDMsg();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		incorrectID=af.getIncorrectID(data);
+		incorrectID.diplayIncorrectIDMsg();
+
 	}
-	
+
 	public void displayMenu() 
 	{
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			menu=af.getMenu(data);
-			menu.displayMenu();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		menu=af.getMenu(data);
+		menu.displayMenu();
 	}
-	
+
 	public void displayIncorrectPINMsg() 
 	{
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			incorrectPIN=af.getIncorrectPIN(data);
-			incorrectPIN.displayIncorrectPINMsg();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		incorrectPIN=af.getIncorrectPIN(data);
+		incorrectPIN.displayIncorrectPINMsg();
+
 	}
 
 	public void displayTooManyAttemptsMsg() {
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			tooManyAttempts=af.getTooManyAttempts(data);
-			tooManyAttempts.displayTooManyAttemptsMsg();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		tooManyAttempts=af.getTooManyAttempts(data);
+		tooManyAttempts.displayTooManyAttemptsMsg();
+
 	}
 
 	public void makeDeposit() {
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			deposit=af.getDeposit(data);
-			deposit.makeDeposit();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		deposit=af.getDeposit(data);
+		deposit.makeDeposit();
+
 	}
 
 	public void displayBalance() {
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			balance=af.getBalance(data);
-			balance.displayBalance();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		balance=af.getBalance(data);
+		balance.displayBalance();
+
 	}
 
 	public void makeWithdraw() {
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
-			withdraw=af.getWithdraw(data);
-			withdraw.makeWithdraw();
-		}
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
+		withdraw=af.getWithdraw(data);
+		withdraw.makeWithdraw();
+
 	}
 
 	public void displayMinBalanceMsg() {
 		if(data.getAccountID()==1)
-		{
 			af=new AccountFactory1();
+		else if(data.getAccountID()==2)
+			af=new AccountFactory2();
 			minBalance=af.getMinBalance(data);
 			minBalance.displayMinBalanceMsg();
-		}
+		
 	}
 
 	public void applyPenalty() {

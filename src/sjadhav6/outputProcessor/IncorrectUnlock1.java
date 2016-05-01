@@ -9,7 +9,7 @@ public class IncorrectUnlock1 extends IncorrectUnlock {
 
 	public void incorrectUnlockMsg() {
 		System.out.println("Entered Pin is Invalid.");
-		return;
+		
 	}
 
 }

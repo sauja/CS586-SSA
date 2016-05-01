@@ -5,28 +5,31 @@ import java.io.InputStreamReader;
 
 import sjadhav6.datastore.DataStore;
 import sjadhav6.datastore.DataStore2;
+import sjadhav6.main.Constants;
 import sjadhav6.mda_efsm.MDA_EFSM;
 
 public class Account2  
 {
 	public MDA_EFSM model;
 	private DataStore data2;
-
+	public Account2() {
+		this.data2=new DataStore2();
+		this.model=new MDA_EFSM(data2);	
+	}
 	//main method to handle Account 2 interactions
 	public void run() {
 
 		System.out.println("In Account 2");
 		BufferedReader readConsole = new BufferedReader(new InputStreamReader(System.in));
 		String option="";
-		while(!option.equals("12"))// while option is not "exit"
+		while(!option.equals("11"))// while option is not "exit"
 		{
 			try
 			{
 				System.out.println("Enter Operation for Account1:\n"
 						+ "1:OPEN  2:PIN  3:DEPOSIT  4:WITHDRAW  \n"
 						+ "5:BALANCE  6:LOGIN  7:LOGOUT  \n"
-						+ "8:LOCK  9:UNLOCK  10:suspend  \n"
-						+ "11:activate  12:close");
+						+ "8:suspend  9:activate  10:close	11:EXIT");
 				option=readConsole.readLine();
 				switch(option)
 				{
@@ -70,25 +73,17 @@ public class Account2
 				case "7": //To logout
 					LOGOUT();
 					break;
-				case "8": //To lock account
-					int pin1;
-					System.out.println("Enter PIN digits");
-					pin1=Integer.parseInt(readConsole.readLine());
-					LOCK(pin1);
-					break;
-				case "9": //To unlock account
-					int pin2;
-					System.out.println("Enter PIN digits");
-					pin2=Integer.parseInt(readConsole.readLine());
-					UNLOCK(pin2);
-					break;
-				case "10": // To suspend account
+				case "8": // To suspend account
 					suspend();
 					break;
-				case "11": //To activate suspended account
+				case "9": //To activate suspended account
 					activate();
-				case "12": //To close or exit
+					break;
+				case "10": //To close or exit
 					close();
+					break;
+				case "11": //To close or exit
+					break;
 				default:
 					System.out.println("Invalid Input");
 
@@ -116,18 +111,35 @@ public class Account2
 	}
 
 	public void PIN(int x) {
-		// TODO implement here
-		return;
+		DataStore2 temp=(DataStore2)data2;
+		if(temp.getPin()==x)
+			model.correctPINAboveMinBalance();
+		else
+			model.incorrectPIN(Constants.ACCOUNT2_MAXATTEMPT);
 	}
 
 	public void DEPOSIT(int d) {
-		// TODO implement here
-		return;
+		DataStore2 temp=(DataStore2)data2;
+		temp.setTempDeposit(d);
+		model.deposit();
+		model.aboveMinBalance();
 	}
 
 	public void WITHDRAW(int w) {
-		// TODO implement here
-		return;
+		DataStore2 temp=(DataStore2)data2;
+		temp.setTempWithdraw(w);
+		float bal=temp.getBalance();
+		if(bal>0)
+		{
+			model.withdraw();
+			model.aboveMinBalance();
+		}
+		else
+		{
+			model.withdraw();
+			model.aboveMinBalance();
+			model.noFunds();
+		}
 	}
 
 	public void BALANCE() {
@@ -136,36 +148,27 @@ public class Account2
 	}
 
 	public void LOGIN(int y) {
-		// TODO implement here
-		return;
-	}
-	private void LOCK(int x) {
-		// TODO Auto-generated method stub
-		
+		DataStore2 temp=(DataStore2)data2;
+		if(temp.getuID()==y)
+			model.correctLogin();
+		else
+			model.incorrectLogin();
 	}
 
-	private void UNLOCK(int x) {
-		// TODO Auto-generated method stub
-		
-	}
 	public void LOGOUT() {
-		// TODO implement here
-		return;
+		model.logout();
 	}
 
 	public void suspend() {
-		// TODO implement here
-		return;
+		model.suspend();
 	}
 
 	public void activate() {
-		// TODO implement here
-		return;
+		model.activate();
 	}
 
 	public void close() {
-		// TODO implement here
-		return;
+		model.close();
 	}
 
 }

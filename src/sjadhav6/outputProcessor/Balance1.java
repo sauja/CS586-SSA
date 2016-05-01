@@ -14,7 +14,7 @@ public class Balance1 extends Balance {
 	public void displayBalance() {
 		DataStore1 data1=(DataStore1) getData();
 		System.out.println("Balance for account1: $"+data1.getBalance());
-		return;
+		
 	}
 
 }

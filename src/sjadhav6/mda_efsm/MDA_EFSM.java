@@ -236,5 +236,14 @@ public class MDA_EFSM
 		}
 
 	}
+	public void noFunds() {
+		if (stateID==Constants.READY)
+		{
+			System.out.println("Ready-->Ready");
+			stateList[stateID].noFunds();
+			stateID=Constants.READY;
+		}
+
+	}
 
 }
